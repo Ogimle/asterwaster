@@ -12,6 +12,8 @@
 
 **Engine**: [QICIEngine](http://qiciengine.com/) (phaser wrapper, great engine)
 
+**Demo**: [play](http://elmigo.ru/aster)
+
 ##To use sources:
 
 1. [Install](http://docs.qiciengine.com/manual/Overview/Install.html) QICIengine 1.1.6
