@@ -1,0 +1,55 @@
+{
+  "projectName": "Default",
+  "gameName": "AsterWaster",
+  "companyName": "DefaultCompany",
+  "gameInstance": "qc_game",
+  "div": "",
+  "orientation": 0,
+  "qcVer": "0.9",
+  "gameWidth": "640",
+  "version": "1",
+  "loading": "",
+  "backgroundColor": 16777215,
+  "toolFlag": 508,
+  "localStorageID": "game.asterwaster",
+  "frameRate": {
+    "mobile": 30,
+    "desktop": 60
+  },
+  "fixedGameSize": {
+    "enabled": true,
+    "width": 960,
+    "height": 540
+  },
+  "resolutionRatio": 0.25,
+  "runInBackground": true,
+  "renderer": "Auto",
+  "antialias": true,
+  "transparent": false,
+  "customSettings": {},
+  "publish": {
+    "android": "build/android",
+    "ios": "build/ios",
+    "browsers": "/home/elmigo/dev/proj/Asteroids/Temp",
+    "browsers_timestamp": false,
+    "android_timestamp": true,
+    "ios_timestamp": true
+  },
+  "android": {
+    "minTarget": 16,
+    "target": 16,
+    "buildCode": 0,
+    "frameRate": 30,
+    "renderer": "Canvas",
+    "defaultOrientation": 0
+  },
+  "ios": {
+    "target": "8.0",
+    "buildCode": 0,
+    "frameRate": 30,
+    "renderer": "Auto",
+    "defaultOrientation": 0,
+    "splashScaling": 2
+  },
+  "buildVersion": "0.0.1"
+}

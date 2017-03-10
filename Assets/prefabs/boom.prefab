@@ -1,0 +1,119 @@
+{
+  "class": "qc.Sprite",
+  "data": {
+    "uuid": "4285d942-4221-4f49-9857-36ba15dc2d57",
+    "_prefab": [
+      7,
+      "ac03de34-be26-43b9-a956-10605427b309"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "boom"
+    ],
+    "uniqueName": [
+      7,
+      ""
+    ],
+    "ignoreDestroy": [
+      5,
+      null
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      16777215
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [
+      {
+        "clazz": "qc.engine.Boom",
+        "data": "098d4b78-fac3-4e75-9bb1-96382f14c8fa"
+      }
+    ],
+    "position": [
+      0.5,
+      0.5,
+      0,
+      0,
+      0,
+      0,
+      25,
+      25,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      1
+    ],
+    "scaleY": [
+      3,
+      1
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [],
+    "texture": [
+      10,
+      "Assets/atlas/explode.bin",
+      "c1c1498e-d31e-4164-8052-7d8d0c5e5e63",
+      "explode-2-0.png"
+    ],
+    "frame": [
+      7,
+      "explode-2-0.png"
+    ],
+    "defaultAnimation": [
+      7,
+      null
+    ]
+  },
+  "__json": {
+    "098d4b78-fac3-4e75-9bb1-96382f14c8fa": {
+      "class": "qc.engine.Boom",
+      "data": {
+        "uuid": [
+          7,
+          "098d4b78-fac3-4e75-9bb1-96382f14c8fa"
+        ],
+        "enable": true
+      }
+    }
+  },
+  "dependences": {
+    "c1c1498e-d31e-4164-8052-7d8d0c5e5e63": {
+      "key": "Assets/atlas/explode.bin",
+      "uuid": "c1c1498e-d31e-4164-8052-7d8d0c5e5e63"
+    }
+  }
+}

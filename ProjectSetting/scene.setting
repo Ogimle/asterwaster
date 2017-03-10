@@ -1,0 +1,7 @@
+{
+  "scene": [
+    "Assets/scene/mmenu",
+    "Assets/scene/game"
+  ],
+  "entryScene": "Assets/scene/mmenu"
+}

@@ -1,0 +1,119 @@
+{
+  "class": "qc.Sprite",
+  "data": {
+    "uuid": "54b7906d-3737-4963-8c90-7bbaa16aeea8",
+    "_prefab": [
+      7,
+      "6da19dfe-d21c-4b2e-9add-9900d424efb5"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "ufo_explode"
+    ],
+    "uniqueName": [
+      7,
+      ""
+    ],
+    "ignoreDestroy": [
+      5,
+      false
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      16777215
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [
+      {
+        "clazz": "qc.engine.Boom",
+        "data": "fcb2dc2b-db1c-4cea-8c23-6c40d809d8ab"
+      }
+    ],
+    "position": [
+      0.5,
+      0.5,
+      221,
+      245,
+      221,
+      245,
+      64,
+      64,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      2
+    ],
+    "scaleY": [
+      3,
+      2
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [],
+    "texture": [
+      10,
+      "Assets/atlas/explode.bin",
+      "c1c1498e-d31e-4164-8052-7d8d0c5e5e63",
+      "explode-2-3.png"
+    ],
+    "frame": [
+      7,
+      "explode-2-3.png"
+    ],
+    "defaultAnimation": [
+      7,
+      "boom"
+    ]
+  },
+  "__json": {
+    "fcb2dc2b-db1c-4cea-8c23-6c40d809d8ab": {
+      "class": "qc.engine.Boom",
+      "data": {
+        "uuid": [
+          7,
+          "fcb2dc2b-db1c-4cea-8c23-6c40d809d8ab"
+        ],
+        "enable": true
+      }
+    }
+  },
+  "dependences": {
+    "c1c1498e-d31e-4164-8052-7d8d0c5e5e63": {
+      "key": "Assets/atlas/explode.bin",
+      "uuid": "c1c1498e-d31e-4164-8052-7d8d0c5e5e63"
+    }
+  }
+}

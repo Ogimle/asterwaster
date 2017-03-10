@@ -1,0 +1,147 @@
+{
+  "class": "qc.Sprite",
+  "data": {
+    "uuid": "44005930-49f3-4f58-8759-b6f14a642f96",
+    "_prefab": [
+      7,
+      "31f651ea-fe35-4f80-b720-44c8adef8ae1"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "asteroid2"
+    ],
+    "uniqueName": [
+      7,
+      ""
+    ],
+    "ignoreDestroy": [
+      5,
+      null
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      16777215
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [
+      {
+        "clazz": "qc.engine.Asteroid",
+        "data": "c3f71431-f73e-48b7-974a-567b98a2edae"
+      }
+    ],
+    "position": [
+      0.5,
+      0.5,
+      99.67576791808928,
+      99.6757679180897,
+      99.67576791808928,
+      99.6757679180897,
+      40,
+      40,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      1
+    ],
+    "scaleY": [
+      3,
+      1
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [],
+    "texture": [
+      10,
+      "Assets/atlas/asters.bin",
+      "63c1a6c8-1f9c-4b1a-b676-cd35a0c42145",
+      "asteroid21.png"
+    ],
+    "frame": [
+      7,
+      "asteroid21.png"
+    ],
+    "defaultAnimation": [
+      7,
+      null
+    ]
+  },
+  "__json": {
+    "c3f71431-f73e-48b7-974a-567b98a2edae": {
+      "class": "qc.engine.Asteroid",
+      "data": {
+        "uuid": [
+          7,
+          "c3f71431-f73e-48b7-974a-567b98a2edae"
+        ],
+        "enable": true,
+        "moveSpeed": [
+          3,
+          55
+        ],
+        "angleSpeed": [
+          3,
+          1
+        ],
+        "hp": [
+          3,
+          2
+        ],
+        "score": [
+          3,
+          75
+        ],
+        "maxHP": [
+          3,
+          2
+        ],
+        "size": [
+          3,
+          2
+        ],
+        "type": [
+          7,
+          "ast"
+        ]
+      }
+    }
+  },
+  "dependences": {
+    "63c1a6c8-1f9c-4b1a-b676-cd35a0c42145": {
+      "key": "Assets/atlas/asters.bin",
+      "uuid": "63c1a6c8-1f9c-4b1a-b676-cd35a0c42145"
+    }
+  }
+}

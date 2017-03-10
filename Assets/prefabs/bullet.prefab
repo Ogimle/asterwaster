@@ -1,0 +1,120 @@
+{
+  "class": "qc.Sprite",
+  "data": {
+    "uuid": "0d97950d-f5af-4216-8ebb-6e9f48e047af",
+    "_prefab": [
+      7,
+      "142d0720-e37b-4045-b129-8eca249a3735"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "bullet"
+    ],
+    "uniqueName": [
+      7,
+      ""
+    ],
+    "ignoreDestroy": [
+      5,
+      null
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      16777215
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [
+      {
+        "clazz": "qc.engine.Bullet",
+        "data": "a2fa53da-da42-4cac-b258-8f6749d04719"
+      }
+    ],
+    "position": [
+      0.5,
+      0.5,
+      200,
+      200,
+      200,
+      200,
+      7,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      1
+    ],
+    "scaleY": [
+      3,
+      1
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [],
+    "texture": [
+      10,
+      "Assets/textures/bullets.bin",
+      "7a3be600-3ac0-4a24-bf29-aa0a2f8ca33a",
+      0
+    ],
+    "frame": null,
+    "defaultAnimation": [
+      7,
+      null
+    ]
+  },
+  "__json": {
+    "a2fa53da-da42-4cac-b258-8f6749d04719": {
+      "class": "qc.engine.Bullet",
+      "data": {
+        "uuid": [
+          7,
+          "a2fa53da-da42-4cac-b258-8f6749d04719"
+        ],
+        "enable": true,
+        "speed": [
+          3,
+          1000
+        ]
+      }
+    }
+  },
+  "dependences": {
+    "7a3be600-3ac0-4a24-bf29-aa0a2f8ca33a": {
+      "key": "Assets/textures/bullets.bin",
+      "uuid": "7a3be600-3ac0-4a24-bf29-aa0a2f8ca33a"
+    }
+  }
+}

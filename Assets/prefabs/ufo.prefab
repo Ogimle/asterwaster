@@ -1,0 +1,102 @@
+{
+  "class": "qc.Sprite",
+  "data": {
+    "uuid": "8431ee0c-80ef-429e-a601-bc3318a8eaeb",
+    "_prefab": [
+      7,
+      "05fc9423-f80e-4e9b-8bc2-a9e69d796370"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "ufo"
+    ],
+    "uniqueName": [
+      7,
+      ""
+    ],
+    "ignoreDestroy": [
+      5,
+      false
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      16777215
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [],
+    "position": [
+      0.5,
+      0.5,
+      219.99999061543954,
+      244.9999888315275,
+      219.99999061543954,
+      244.9999888315275,
+      32,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      0.9999999577272036
+    ],
+    "scaleY": [
+      3,
+      0.9999999577272036
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [],
+    "texture": [
+      10,
+      "Assets/atlas/ufo.bin",
+      "cb9d0118-9efc-4f89-b966-70944a1cab74",
+      "ufo2.png"
+    ],
+    "frame": [
+      7,
+      "ufo2.png"
+    ],
+    "defaultAnimation": [
+      7,
+      "fly"
+    ]
+  },
+  "dependences": {
+    "cb9d0118-9efc-4f89-b966-70944a1cab74": {
+      "key": "Assets/atlas/ufo.bin",
+      "uuid": "cb9d0118-9efc-4f89-b966-70944a1cab74"
+    }
+  }
+}
