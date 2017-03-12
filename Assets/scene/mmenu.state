@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      1.3838174273859067,
-      85.68464730290458,
-      1.3838174273859067,
-      85.68464730290458,
+      1.8526970954358148,
+      22.385892116182504,
+      1.8526970954358148,
+      22.385892116182504,
       960,
       540,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.691908713692946
+      0.9263485477178424
     ],
     "scaleY": [
       3,
-      0.691908713692946
+      0.9263485477178424
     ],
     "rotation": [
       3,
@@ -1286,11 +1286,14 @@
                 "children": [],
                 "texture": [
                   10,
-                  "Assets/textures/ru.bin",
-                  "3ebcb4f1-2fff-4484-9f14-8801d31f8471",
-                  0
+                  "Assets/atlas/ui.bin",
+                  "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                  "ru.png"
                 ],
-                "frame": null,
+                "frame": [
+                  7,
+                  "ru.png"
+                ],
                 "imageType": [
                   3,
                   0
@@ -1412,11 +1415,14 @@
                 "children": [],
                 "texture": [
                   10,
-                  "Assets/textures/uk.bin",
-                  "ba59719f-a60f-47e0-9c8e-8b3ab8a241fa",
-                  0
+                  "Assets/atlas/ui.bin",
+                  "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                  "uk.png"
                 ],
-                "frame": null,
+                "frame": [
+                  7,
+                  "uk.png"
+                ],
                 "imageType": [
                   3,
                   0
@@ -2932,7 +2938,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -6137,11 +6143,14 @@
                 "children": [],
                 "texture": [
                   10,
-                  "Assets/textures/cur_arrow.bin",
-                  "9b3176d1-ce33-451d-a2cb-bcd6536d7289",
-                  0
+                  "Assets/atlas/ui.bin",
+                  "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                  "cur_arrow.png"
                 ],
-                "frame": null,
+                "frame": [
+                  7,
+                  "cur_arrow.png"
+                ],
                 "defaultAnimation": [
                   7,
                   null
@@ -6264,13 +6273,9 @@
       "key": "ac03de34-be26-43b9-a956-10605427b309",
       "uuid": "ac03de34-be26-43b9-a956-10605427b309"
     },
-    "3ebcb4f1-2fff-4484-9f14-8801d31f8471": {
-      "key": "Assets/textures/ru.bin",
-      "uuid": "3ebcb4f1-2fff-4484-9f14-8801d31f8471"
-    },
-    "ba59719f-a60f-47e0-9c8e-8b3ab8a241fa": {
-      "key": "Assets/textures/uk.bin",
-      "uuid": "ba59719f-a60f-47e0-9c8e-8b3ab8a241fa"
+    "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d": {
+      "key": "Assets/atlas/ui.bin",
+      "uuid": "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d"
     },
     "l757d06a-78c4-4729-a4d7-9ffc007dbcdc": {
       "key": "l757d06a-78c4-4729-a4d7-9ffc007dbcdc",
@@ -6291,10 +6296,6 @@
     "8878515c-d1dc-4988-9ff6-160faf6f87f7": {
       "key": "Assets/textures/frame2.bin",
       "uuid": "8878515c-d1dc-4988-9ff6-160faf6f87f7"
-    },
-    "9b3176d1-ce33-451d-a2cb-bcd6536d7289": {
-      "key": "Assets/textures/cur_arrow.bin",
-      "uuid": "9b3176d1-ce33-451d-a2cb-bcd6536d7289"
     }
   }
 }

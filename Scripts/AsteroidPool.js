@@ -229,11 +229,11 @@ AsteroidPool.prototype.update = function()
     {
         var isAllDie = true;
 
-        // пробегаемся по астерам 
-        // если есть живые - двигаем 
-        // если нет живых - запускаем новую волну
+        // iterate by asteroids & gems
+        // move it if alive
+        // run new wave if all die
         self._alive = 0;
-        for (var idx in self.gameObject.children) 
+        for (var idx=0, imax=self.gameObject.children.length; idx<imax; ++idx)
         {
             if (self.gameObject.children[idx].visible === true) 
             {
@@ -242,14 +242,14 @@ AsteroidPool.prototype.update = function()
 
                 var go = self.gameObject.children[idx];
 
-                // двигаем астер
+                // move aster
                 var deltaMs = self.game.time.deltaTime / 1000;
                 go.x += go.Asteroid._dir.x * go.Asteroid.moveSpeed * deltaMs;
                 go.y += go.Asteroid._dir.y * go.Asteroid.moveSpeed * deltaMs;    
 
                 go.rotation += go.Asteroid.angleSpeed * deltaMs;
 
-                // проверяем столкновение с игроком
+                // check collision with player
                 if (self.ship.visible === true && self.ship._untouchable === false)
                 {
                     var dist = self.game.math.distance(go.x, go.y, self.ship.x, self.ship.y);
@@ -269,7 +269,7 @@ AsteroidPool.prototype.update = function()
                     }
                 }
 
-                // астер вылетел за игровое поле перекидываем на зеркальную сторону
+                // aster move out of screen then do mirror reposition him
                 if (go.x < go.Asteroid.hideLeft || go.x > go.Asteroid.hideRight || 
                     go.y < go.Asteroid.hideTop || go.y > go.Asteroid.hideBottom)
                 {

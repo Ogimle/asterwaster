@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      1.9398340248962427,
-      10.622406639004168,
-      1.9398340248962427,
-      10.622406639004168,
+      -29.954668049792417,
+      6.170692971991343,
+      -29.954668049792417,
+      6.170692971991343,
       960,
       540,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.9699170124481328
+      0.9726659751037345
     ],
     "scaleY": [
       3,
-      0.9699170124481328
+      0.9726659751037345
     ],
     "rotation": [
       3,
@@ -2694,7 +2694,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -3068,11 +3068,14 @@
                       ],
                       "texture": [
                         10,
-                        "Assets/textures/btn_2menu.bin",
-                        "79831e21-4ec4-4114-903e-9de435a81030",
-                        0
+                        "Assets/atlas/ui.bin",
+                        "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                        "btn_2menu.png"
                       ],
-                      "frame": null,
+                      "frame": [
+                        7,
+                        "btn_2menu.png"
+                      ],
                       "imageType": [
                         3,
                         0
@@ -3468,11 +3471,14 @@
                       ],
                       "texture": [
                         10,
-                        "Assets/textures/btn_tryagain.bin",
-                        "5c43605e-0460-417d-8c58-e1207ea329ff",
-                        0
+                        "Assets/atlas/ui.bin",
+                        "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                        "btn_tryagain.png"
                       ],
-                      "frame": null,
+                      "frame": [
+                        7,
+                        "btn_tryagain.png"
+                      ],
                       "imageType": [
                         3,
                         0
@@ -4590,11 +4596,14 @@
                             "children": [],
                             "texture": [
                               10,
-                              "Assets/textures/shop_itm_ship.bin",
-                              "58b38535-170f-4071-8316-5c1a27507da0",
-                              0
+                              "Assets/atlas/ui.bin",
+                              "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                              "shop_itm_ship.png"
                             ],
-                            "frame": null,
+                            "frame": [
+                              7,
+                              "shop_itm_ship.png"
+                            ],
                             "imageType": [
                               3,
                               0
@@ -4612,11 +4621,14 @@
                       ],
                       "texture": [
                         10,
-                        "Assets/textures/shop_item_btn_normal.bin",
-                        "f366a304-a28a-4c21-adc6-b74fd1c5ccfe",
-                        0
+                        "Assets/atlas/ui.bin",
+                        "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                        "shop_item_btn_normal.png"
                       ],
-                      "frame": null,
+                      "frame": [
+                        7,
+                        "shop_item_btn_normal.png"
+                      ],
                       "imageType": [
                         3,
                         0
@@ -4658,15 +4670,15 @@
                           ],
                           "_normalTexture": [
                             10,
-                            "Assets/textures/shop_item_btn_normal.bin",
-                            "f366a304-a28a-4c21-adc6-b74fd1c5ccfe",
-                            0
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_normal.png"
                           ],
                           "_pressedTexture": [
                             10,
-                            "Assets/textures/shop_item_btn_active.bin",
-                            "fd647626-5ca0-4f5c-9c4f-f83b5a1dcb9a",
-                            0
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_active.png"
                           ],
                           "_disabledTexture": null,
                           "_normalColor": [
@@ -4890,11 +4902,14 @@
                             "children": [],
                             "texture": [
                               10,
-                              "Assets/textures/shop_itm_teleport.bin",
-                              "28522434-32cc-40ef-829f-e961aa7507fb",
-                              0
+                              "Assets/atlas/ui.bin",
+                              "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                              "shop_itm_teleport.png"
                             ],
-                            "frame": null,
+                            "frame": [
+                              7,
+                              "shop_itm_teleport.png"
+                            ],
                             "imageType": [
                               3,
                               0
@@ -4912,11 +4927,14 @@
                       ],
                       "texture": [
                         10,
-                        "Assets/textures/shop_item_btn_normal.bin",
-                        "f366a304-a28a-4c21-adc6-b74fd1c5ccfe",
-                        0
+                        "Assets/atlas/ui.bin",
+                        "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                        "shop_item_btn_normal.png"
                       ],
-                      "frame": null,
+                      "frame": [
+                        7,
+                        "shop_item_btn_normal.png"
+                      ],
                       "imageType": [
                         3,
                         0
@@ -4958,15 +4976,15 @@
                           ],
                           "_normalTexture": [
                             10,
-                            "Assets/textures/shop_item_btn_normal.bin",
-                            "f366a304-a28a-4c21-adc6-b74fd1c5ccfe",
-                            0
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_normal.png"
                           ],
                           "_pressedTexture": [
                             10,
-                            "Assets/textures/shop_item_btn_active.bin",
-                            "fd647626-5ca0-4f5c-9c4f-f83b5a1dcb9a",
-                            0
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_active.png"
                           ],
                           "_disabledTexture": null,
                           "_normalColor": [
@@ -5190,11 +5208,14 @@
                             "children": [],
                             "texture": [
                               10,
-                              "Assets/textures/shop_itm_firerate.bin",
-                              "e5e98643-6885-43f3-814c-f6fb1398f7f5",
-                              0
+                              "Assets/atlas/ui.bin",
+                              "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                              "shop_itm_firerate.png"
                             ],
-                            "frame": null,
+                            "frame": [
+                              7,
+                              "shop_itm_firerate.png"
+                            ],
                             "imageType": [
                               3,
                               0
@@ -5212,11 +5233,14 @@
                       ],
                       "texture": [
                         10,
-                        "Assets/textures/shop_item_btn_normal.bin",
-                        "f366a304-a28a-4c21-adc6-b74fd1c5ccfe",
-                        0
+                        "Assets/atlas/ui.bin",
+                        "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                        "shop_item_btn_normal.png"
                       ],
-                      "frame": null,
+                      "frame": [
+                        7,
+                        "shop_item_btn_normal.png"
+                      ],
                       "imageType": [
                         3,
                         0
@@ -5258,15 +5282,15 @@
                           ],
                           "_normalTexture": [
                             10,
-                            "Assets/textures/shop_item_btn_normal.bin",
-                            "f366a304-a28a-4c21-adc6-b74fd1c5ccfe",
-                            0
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_normal.png"
                           ],
                           "_pressedTexture": [
                             10,
-                            "Assets/textures/shop_item_btn_active.bin",
-                            "fd647626-5ca0-4f5c-9c4f-f83b5a1dcb9a",
-                            0
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_active.png"
                           ],
                           "_disabledTexture": null,
                           "_normalColor": [
@@ -6103,11 +6127,14 @@
                             "children": [],
                             "texture": [
                               10,
-                              "Assets/textures/shop_itm_cloaker.bin",
-                              "768a11ee-7af8-4311-8d68-4412684eb8cc",
-                              0
+                              "Assets/atlas/ui.bin",
+                              "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                              "shop_itm_cloaker.png"
                             ],
-                            "frame": null,
+                            "frame": [
+                              7,
+                              "shop_itm_cloaker.png"
+                            ],
                             "imageType": [
                               3,
                               0
@@ -6125,11 +6152,14 @@
                       ],
                       "texture": [
                         10,
-                        "Assets/textures/shop_item_btn_normal.bin",
-                        "f366a304-a28a-4c21-adc6-b74fd1c5ccfe",
-                        0
+                        "Assets/atlas/ui.bin",
+                        "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                        "shop_item_btn_normal.png"
                       ],
-                      "frame": null,
+                      "frame": [
+                        7,
+                        "shop_item_btn_normal.png"
+                      ],
                       "imageType": [
                         3,
                         0
@@ -6171,15 +6201,15 @@
                           ],
                           "_normalTexture": [
                             10,
-                            "Assets/textures/shop_item_btn_normal.bin",
-                            "f366a304-a28a-4c21-adc6-b74fd1c5ccfe",
-                            0
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_normal.png"
                           ],
                           "_pressedTexture": [
                             10,
-                            "Assets/textures/shop_item_btn_active.bin",
-                            "fd647626-5ca0-4f5c-9c4f-f83b5a1dcb9a",
-                            0
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_active.png"
                           ],
                           "_disabledTexture": null,
                           "_normalColor": [
@@ -6903,11 +6933,14 @@
                 ],
                 "texture": [
                   10,
-                  "Assets/textures/shop_itm_teleport.bin",
-                  "28522434-32cc-40ef-829f-e961aa7507fb",
-                  0
+                  "Assets/atlas/ui.bin",
+                  "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                  "shop_itm_teleport.png"
                 ],
-                "frame": null,
+                "frame": [
+                  7,
+                  "shop_itm_teleport.png"
+                ],
                 "imageType": [
                   3,
                   0
@@ -7238,11 +7271,14 @@
                 ],
                 "texture": [
                   10,
-                  "Assets/textures/shop_itm_firerate.bin",
-                  "e5e98643-6885-43f3-814c-f6fb1398f7f5",
-                  0
+                  "Assets/atlas/ui.bin",
+                  "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                  "shop_itm_firerate.png"
                 ],
-                "frame": null,
+                "frame": [
+                  7,
+                  "shop_itm_firerate.png"
+                ],
                 "imageType": [
                   3,
                   0
@@ -7345,11 +7381,14 @@
                 "children": [],
                 "texture": [
                   10,
-                  "Assets/textures/cur_aim.bin",
-                  "058ae069-d42f-4e6b-b8bc-b3045b5eeb8a",
-                  0
+                  "Assets/atlas/ui.bin",
+                  "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                  "cur_aim.png"
                 ],
-                "frame": null,
+                "frame": [
+                  7,
+                  "cur_aim.png"
+                ],
                 "defaultAnimation": [
                   7,
                   null
@@ -7750,13 +7789,9 @@
       "key": "l757d06a-78c4-4729-a4d7-9ffc007dbcdc",
       "uuid": "l757d06a-78c4-4729-a4d7-9ffc007dbcdc"
     },
-    "79831e21-4ec4-4114-903e-9de435a81030": {
-      "key": "Assets/textures/btn_2menu.bin",
-      "uuid": "79831e21-4ec4-4114-903e-9de435a81030"
-    },
-    "5c43605e-0460-417d-8c58-e1207ea329ff": {
-      "key": "Assets/textures/btn_tryagain.bin",
-      "uuid": "5c43605e-0460-417d-8c58-e1207ea329ff"
+    "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d": {
+      "key": "Assets/atlas/ui.bin",
+      "uuid": "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d"
     },
     "f6bc5d1f-eaa4-47e3-ba3e-059cfa615ec0": {
       "key": "Assets/textures/win_gameover.bin",
@@ -7770,26 +7805,6 @@
       "key": "Assets/textures/frame.bin",
       "uuid": "f015ae0a-a290-478a-ba0f-21f1c9c020ab"
     },
-    "f366a304-a28a-4c21-adc6-b74fd1c5ccfe": {
-      "key": "Assets/textures/shop_item_btn_normal.bin",
-      "uuid": "f366a304-a28a-4c21-adc6-b74fd1c5ccfe"
-    },
-    "fd647626-5ca0-4f5c-9c4f-f83b5a1dcb9a": {
-      "key": "Assets/textures/shop_item_btn_active.bin",
-      "uuid": "fd647626-5ca0-4f5c-9c4f-f83b5a1dcb9a"
-    },
-    "58b38535-170f-4071-8316-5c1a27507da0": {
-      "key": "Assets/textures/shop_itm_ship.bin",
-      "uuid": "58b38535-170f-4071-8316-5c1a27507da0"
-    },
-    "28522434-32cc-40ef-829f-e961aa7507fb": {
-      "key": "Assets/textures/shop_itm_teleport.bin",
-      "uuid": "28522434-32cc-40ef-829f-e961aa7507fb"
-    },
-    "e5e98643-6885-43f3-814c-f6fb1398f7f5": {
-      "key": "Assets/textures/shop_itm_firerate.bin",
-      "uuid": "e5e98643-6885-43f3-814c-f6fb1398f7f5"
-    },
     "ac42d4ef-7d1a-4db9-8ae3-8b84b37879f9": {
       "key": "Assets/sounds/shop_buy_failed.mp3.bin",
       "uuid": "ac42d4ef-7d1a-4db9-8ae3-8b84b37879f9"
@@ -7802,17 +7817,9 @@
       "key": "__builtin_resource__",
       "uuid": "__builtin_resource__"
     },
-    "768a11ee-7af8-4311-8d68-4412684eb8cc": {
-      "key": "Assets/textures/shop_itm_cloaker.bin",
-      "uuid": "768a11ee-7af8-4311-8d68-4412684eb8cc"
-    },
     "l2dd2c14-50d4-4bfe-8722-daca4c077399": {
       "key": "l2dd2c14-50d4-4bfe-8722-daca4c077399",
       "uuid": "l2dd2c14-50d4-4bfe-8722-daca4c077399"
-    },
-    "058ae069-d42f-4e6b-b8bc-b3045b5eeb8a": {
-      "key": "Assets/textures/cur_aim.bin",
-      "uuid": "058ae069-d42f-4e6b-b8bc-b3045b5eeb8a"
     }
   }
 }
