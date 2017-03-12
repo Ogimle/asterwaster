@@ -178,7 +178,7 @@ ShipCtr.prototype.update = function()
     var self = this, go = this.gameObject,
         rbody = this.getScript('qc.arcade.RigidBody'),
         deltaMs = self.game.time.deltaTime / 1000,
-        isKb = false, isMouse = false, angle=null, skill;
+        isKb = false, isMouse = false, angle=null, skill, isMiddleMouse = false;
 
     rbody.moves = !self.observer.HUD.isPause;
     if (self.observer.HUD.isPause) return;
@@ -190,6 +190,8 @@ ShipCtr.prototype.update = function()
     if (self.control_type == 'mouse')
     {
         if (self.game.input.mouse.isMouseDown(qc.Mouse.BUTTON_RIGHT)) isMouse = true;
+        if (self.game.input.mouse.isMouseDown(qc.Mouse.BUTTON_MIDDLE)) isMiddleMouse = true;
+        isMouse = isMiddleMouse ? isMiddleMouse : isMouse;
     }
     else {
         if (self.game.input.isKeyDown(qc.Keyboard.A)) {
@@ -219,7 +221,8 @@ ShipCtr.prototype.update = function()
 	
     if (isMouse)
     {
-		rbody.velocityFromRotation(go.rotation, 250, rbody.acceleration);
+        var v = isMiddleMouse ? -250 : 250;
+		rbody.velocityFromRotation(go.rotation, v, rbody.acceleration);
         if (!self._isFly)
         {
             self._isFly = true;
