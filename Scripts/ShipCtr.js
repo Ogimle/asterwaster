@@ -7,6 +7,8 @@ var ShipCtr = qc.defineBehaviour('qc.demo.ShipCtr', qc.Behaviour, function() {
     this._bulletSpeed = 800;
     this._bulletDamage = 1;
 
+    this.isSeamlessWorld = false;
+
     this._isFly = false;
     
     this.gameObject._untouchable = false;
@@ -136,6 +138,9 @@ ShipCtr.prototype.awake = function ()
 {
     var self = this, input = self.game.input;
 
+    this.rbody = this.getScript('qc.arcade.RigidBody');
+    this.rbody.angularAcceleration = 0;
+
     self._isFly = false;
 
     //self.control_type = window.localStorage.getItem('control_type') || 'mouse';
@@ -168,22 +173,30 @@ ShipCtr.prototype.awake = function ()
     self._sndTeleport.audio = self.sounds[2];
     self._sndTeleport.false = true;
     self._sndTeleport.volume = 0.3;
+
     if (self.game.storage.get('disabledrag'))
-        this.getScript('qc.arcade.RigidBody').drag.set(0,0);
+    {
+        this.getScript('qc.arcade.RigidBody').drag.set(0, 0);
+    }
+
+    if (self.game.storage.get('seamless'))
+    {
+        this.isSeamlessWorld = true;
+        this.hideRight = this.game.width+16;
+        this.hideBottom = this.game.height+16;
+        this.getScript('qc.arcade.RigidBody').collideWorldBounds = false;
+    }
 
 };
 
 ShipCtr.prototype.update = function() 
 {
     var self = this, go = this.gameObject,
-        rbody = this.getScript('qc.arcade.RigidBody'),
         deltaMs = self.game.time.deltaTime / 1000,
-        isKb = false, isMouse = false, angle=null, skill, isMiddleMouse = false;
+        isKb = false, isMouse = false, angle=null, isMiddleMouse = false;
 
-    rbody.moves = !self.observer.HUD.isPause;
+    self.rbody.moves = !self.observer.HUD.isPause;
     if (self.observer.HUD.isPause) return;
-    
-    rbody.angularAcceleration = 0;
     
     // render the root container
     
@@ -217,12 +230,12 @@ ShipCtr.prototype.update = function()
         }
     }
 
-	go.rotation = rbody.angleBetween(self.game.input.cursorPosition);
+	go.rotation = self.rbody.angleBetween(self.game.input.cursorPosition);
 	
     if (isMouse)
     {
         var v = isMiddleMouse ? -250 : 250;
-		rbody.velocityFromRotation(go.rotation, v, rbody.acceleration);
+		self.rbody.velocityFromRotation(go.rotation, v, self.rbody.acceleration);
         if (!self._isFly)
         {
             self._isFly = true;
@@ -232,7 +245,7 @@ ShipCtr.prototype.update = function()
 	}
     else if (isKb)
     {
-		rbody.velocityFromRotation(angle, 250, rbody.acceleration);
+		self.rbody.velocityFromRotation(angle, 250, self.rbody.acceleration);
 		if (!self._isFly)
 		{
             self._isFly = true;
@@ -241,7 +254,7 @@ ShipCtr.prototype.update = function()
         }
 	}
     
-    if (!isMouse && !isKb && (rbody.acceleration.x !== 0 || rbody.acceleration.y !== 0))
+    if (!isMouse && !isKb && (self.rbody.acceleration.x !== 0 || self.rbody.acceleration.y !== 0))
     {
         if (self._isFly)
         {
@@ -250,13 +263,34 @@ ShipCtr.prototype.update = function()
             go.stop();
             go.frame = 'ship.png';
         }
-        rbody.acceleration.set(0, 0);
+        self.rbody.acceleration.set(0, 0);
     }
            
-    if (rbody.velocity.x !== 0 || rbody.velocity.y !== 0)
+    if (self.rbody.velocity.x !== 0 || self.rbody.velocity.y !== 0)
     {
-        self.bg.x += -rbody.velocity.x*deltaMs/10;
-        self.bg.y += -rbody.velocity.y*deltaMs/10;
+        if (self.isSeamlessWorld)
+        {
+            if (go.x < -16)
+            {
+                go.x = self.game.width +16;
+            }
+            else if (go.x > self.hideRight)
+            {
+                go.x = -16;
+            }
+
+            if ( go.y < -16)
+            {
+                go.y = self.game.height + 16;
+            }
+            else if (go.y > self.hideBottom)
+            {
+                go.y = -16;
+            }
+        }
+
+        self.bg.x += -self.rbody.velocity.x*deltaMs/10;
+        self.bg.y += -self.rbody.velocity.y*deltaMs/10;
      
         if (self.bg.x>0) self.bg.x=0;
         else if (self.bg.x<-self.bg_reserve_x) self.bg.x=-self.bg_reserve_x;
@@ -277,7 +311,7 @@ ShipCtr.prototype.update = function()
 
 };
 
-ShipCtr.prototype.onPointerUp = function(id, x, y) 
+ShipCtr.prototype.onPointerUp = function(id, x, y)
 {
 	var self = this,
         input = self.game.input;

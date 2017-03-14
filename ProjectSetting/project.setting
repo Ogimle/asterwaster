@@ -30,7 +30,7 @@
   "publish": {
     "android": "build/android",
     "ios": "build/ios",
-    "browsers": "/home/elmigo/dev/proj/Asteroids/Temp",
+    "browsers": "/home/elmigo/dev/proj/asterwaster/Temp",
     "browsers_timestamp": false,
     "android_timestamp": true,
     "ios_timestamp": true
