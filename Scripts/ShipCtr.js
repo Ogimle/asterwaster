@@ -121,6 +121,36 @@ var ShipCtr = qc.defineBehaviour('qc.demo.ShipCtr', qc.Behaviour, function() {
 				this.value = 0;
 			}
 
+		},
+        resonator: {
+			level: 0,
+			max_level: 4,
+			base: 0,
+			value:0,
+			step: 1,
+			cost: 0,
+			up: function(score) {
+				if (this.cost <= score && this.level<this.max_level)
+				{
+					this.level++;
+					this.value += this.step;
+					return true;
+				}
+				return false;
+			},
+			lget: function() {
+				if (this.level===0) return '---';
+				return this.level;
+			},
+			nget: function() {
+				if (this.level+1>this.max_level) return '---';
+				return this.level+1;
+			},
+			reset: function() {
+				this.level = 0;
+				this.value = 0;
+			}
+
 		}
     };
     
@@ -131,7 +161,8 @@ var ShipCtr = qc.defineBehaviour('qc.demo.ShipCtr', qc.Behaviour, function() {
     bg: qc.Serializer.NODE,
     asters: qc.Serializer.NODE,
     ico_teleport: qc.Serializer.NODE,
-    ico_frate: qc.Serializer.NODE
+    ico_frate: qc.Serializer.NODE,
+    ico_resonator: qc.Serializer.NODE
 });
 
 ShipCtr.prototype.awake = function ()
@@ -206,7 +237,8 @@ ShipCtr.prototype.update = function()
         if (self.game.input.mouse.isMouseDown(qc.Mouse.BUTTON_MIDDLE)) isMiddleMouse = true;
         isMouse = isMiddleMouse ? isMiddleMouse : isMouse;
     }
-    else {
+    else
+    {
         if (self.game.input.isKeyDown(qc.Keyboard.A)) {
             isKb = true;
             angle = 3;
@@ -304,7 +336,16 @@ ShipCtr.prototype.update = function()
     }
     
     if (!self.isKeyTeleport && self.game.input.isKeyDown(qc.Keyboard.SPACEBAR) && self.skills.teleport.level>0) {
-		if (go.Buf_Teleport.apply(self.bg)) self._sndTeleport.play();
+		if (go.Buf_Teleport.apply(self.bg))
+        {
+            self._sndTeleport.play();
+            if (self.skills.resonator.level > 0) go.Buf_Resonator.activate();
+        }
+        else if (self.skills.resonator.level > 0)
+        {
+            go.Buf_Resonator.apply();
+        }
+
 		self.isKeyTeleport = true;
         setTimeout( function() {self.isKeyTeleport = false;}, 500);		
     }
@@ -407,6 +448,8 @@ ShipCtr.prototype.removeSkills = function()
     if (go.Buf_Firerate) go.Buf_Firerate.remove();
     self.ico_frate.visible = false;
 
+    if (go.Buf_Resonator) go.Buf_Resonator.remove();
+    self.ico_resonator.visible = false;
 
 	self.skills.cloaker.reset();
 };

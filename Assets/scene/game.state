@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      1.8526970954356443,
-      22.38589211618256,
-      1.8526970954356443,
-      22.38589211618256,
+      36.318384486834745,
+      151.81998075846207,
+      36.318384486834745,
+      151.81998075846207,
       960,
       540,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.9263485477178424
+      0.6382230083859715
     ],
     "scaleY": [
       3,
-      0.9263485477178424
+      0.6382230083859715
     ],
     "rotation": [
       3,
@@ -1217,6 +1217,11 @@
                           12,
                           "Assets/sounds/teleport.mp3.bin",
                           "6ffd4222-a423-4557-a3fd-e29f5e5c045b"
+                        ],
+                        [
+                          12,
+                          "Assets/sounds/sonic_wave.mp3.bin",
+                          "b281aa7c-9af0-4268-bb28-342cd5fce548"
                         ]
                       ]
                     ],
@@ -1251,6 +1256,10 @@
                     "ico_teleport": [
                       18,
                       "33770811-d268-453c-b9ba-13ae604b5cf4"
+                    ],
+                    "ico_resonator": [
+                      18,
+                      "9edda631-7569-455f-ae9f-920e0dd90162"
                     ]
                   }
                 }
@@ -1729,6 +1738,482 @@
                         [
                           40,
                           "78de3f89-acc3-4598-b30f-69fbf5043d8c"
+                        ]
+                      ]
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.Sprite",
+              "data": {
+                "uuid": "a71df0f1-aace-4d8c-a6d3-031110070838",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "fx_airblast_1"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  0.9000000000000001
+                ],
+                "visible": [
+                  5,
+                  false
+                ],
+                "colorTint": [
+                  14,
+                  4550868
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.Animator",
+                    "data": "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a"
+                  }
+                ],
+                "position": [
+                  0.5,
+                  0.5,
+                  -48.25834363565456,
+                  352.27255661580824,
+                  -48.25834363565456,
+                  352.27255661580824,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1.4400000000000004
+                ],
+                "scaleY": [
+                  3,
+                  1.4400000000000004
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/textures/fx_airblast.bin",
+                  "18ce8622-2ab6-425a-a45b-223bafe730ef",
+                  0
+                ],
+                "frame": null,
+                "defaultAnimation": [
+                  7,
+                  null
+                ]
+              },
+              "__json": {
+                "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a": {
+                  "class": "qc.Animator",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a"
+                    ],
+                    "enable": true,
+                    "animators": [
+                      43,
+                      [
+                        [
+                          40,
+                          "0dfb9072-8746-419c-a6fb-f21f07355e64"
+                        ]
+                      ]
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.Sprite",
+              "data": {
+                "uuid": "8b2ce192-0393-46a4-8d43-40f0d5e31885",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "fx_airblast_2"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  0.5
+                ],
+                "visible": [
+                  5,
+                  false
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.Animator",
+                    "data": "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a"
+                  }
+                ],
+                "position": [
+                  0.5,
+                  0.5,
+                  -70.72023076384869,
+                  393.6467271396661,
+                  -70.72023076384869,
+                  393.6467271396661,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  0
+                ],
+                "scaleY": [
+                  3,
+                  0
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/textures/fx_airblast.bin",
+                  "18ce8622-2ab6-425a-a45b-223bafe730ef",
+                  0
+                ],
+                "frame": null,
+                "defaultAnimation": [
+                  7,
+                  null
+                ]
+              },
+              "__json": {
+                "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a": {
+                  "class": "qc.Animator",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a"
+                    ],
+                    "enable": true,
+                    "animators": [
+                      43,
+                      [
+                        [
+                          40,
+                          "0dfb9072-8746-419c-a6fb-f21f07355e64"
+                        ]
+                      ]
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.Sprite",
+              "data": {
+                "uuid": "767a923a-3fe5-40f8-a975-8bb5c0431239",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "fx_airblast_3"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  0.5
+                ],
+                "visible": [
+                  5,
+                  false
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.Animator",
+                    "data": "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a"
+                  }
+                ],
+                "position": [
+                  0.5,
+                  0.5,
+                  -70.72023076384869,
+                  393.6467271396661,
+                  -70.72023076384869,
+                  393.6467271396661,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  0
+                ],
+                "scaleY": [
+                  3,
+                  0
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/textures/fx_airblast.bin",
+                  "18ce8622-2ab6-425a-a45b-223bafe730ef",
+                  0
+                ],
+                "frame": null,
+                "defaultAnimation": [
+                  7,
+                  null
+                ]
+              },
+              "__json": {
+                "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a": {
+                  "class": "qc.Animator",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a"
+                    ],
+                    "enable": true,
+                    "animators": [
+                      43,
+                      [
+                        [
+                          40,
+                          "0dfb9072-8746-419c-a6fb-f21f07355e64"
+                        ]
+                      ]
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.Sprite",
+              "data": {
+                "uuid": "4b279d6b-de9f-457d-84b2-7bfbfbace622",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "fx_airblast_4"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  0.5
+                ],
+                "visible": [
+                  5,
+                  false
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.Animator",
+                    "data": "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a"
+                  }
+                ],
+                "position": [
+                  0.5,
+                  0.5,
+                  -70.72023076384869,
+                  393.6467271396661,
+                  -70.72023076384869,
+                  393.6467271396661,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  0
+                ],
+                "scaleY": [
+                  3,
+                  0
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/textures/fx_airblast.bin",
+                  "18ce8622-2ab6-425a-a45b-223bafe730ef",
+                  0
+                ],
+                "frame": null,
+                "defaultAnimation": [
+                  7,
+                  null
+                ]
+              },
+              "__json": {
+                "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a": {
+                  "class": "qc.Animator",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "f83e2c14-cbd2-4f87-8395-4f39bd5cd72a"
+                    ],
+                    "enable": true,
+                    "animators": [
+                      43,
+                      [
+                        [
+                          40,
+                          "0dfb9072-8746-419c-a6fb-f21f07355e64"
                         ]
                       ]
                     ]
@@ -6261,6 +6746,312 @@
                         }
                       }
                     }
+                  },
+                  {
+                    "class": "qc.Button",
+                    "data": {
+                      "uuid": "7f659037-664c-453f-95de-8c618e799bda",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "itm_resonator"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.TransitionBehaviour",
+                          "data": "60bf8c34-12d2-4d65-8825-0dfabf054e4d"
+                        },
+                        {
+                          "clazz": "qc.engine.Btn_ShopItem",
+                          "data": "411d7cbf-56f1-4762-bcf9-e9310331b6ad"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        335.30415988506115,
+                        62.999999999999886,
+                        335.30415988506115,
+                        62.999999999999886,
+                        60.87478631283548,
+                        60.80104349663986,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        true
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [
+                        {
+                          "class": "qc.UIImage",
+                          "data": {
+                            "uuid": "0b412031-4ee2-41ff-a12e-fa57be52a851",
+                            "_prefab": [
+                              7,
+                              ""
+                            ],
+                            "__lock": [
+                              5,
+                              null
+                            ],
+                            "name": [
+                              7,
+                              "icon"
+                            ],
+                            "uniqueName": [
+                              7,
+                              ""
+                            ],
+                            "ignoreDestroy": [
+                              5,
+                              false
+                            ],
+                            "alpha": [
+                              3,
+                              1
+                            ],
+                            "visible": [
+                              5,
+                              true
+                            ],
+                            "colorTint": [
+                              14,
+                              16777215
+                            ],
+                            "static": [
+                              5,
+                              false
+                            ],
+                            "scripts": [],
+                            "position": [
+                              0,
+                              0,
+                              10.696479874408467,
+                              14.91877456167601,
+                              10.696479874408467,
+                              14.91877456167601,
+                              39.444955155920184,
+                              37.4376795604308,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "scaleX": [
+                              3,
+                              1
+                            ],
+                            "scaleY": [
+                              3,
+                              1
+                            ],
+                            "rotation": [
+                              3,
+                              0
+                            ],
+                            "interactive": [
+                              5,
+                              false
+                            ],
+                            "isFiltersThrough": [
+                              5,
+                              null
+                            ],
+                            "children": [],
+                            "texture": [
+                              10,
+                              "Assets/atlas/ui.bin",
+                              "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                              "shop_itm_resonator.png"
+                            ],
+                            "frame": [
+                              7,
+                              "shop_itm_resonator.png"
+                            ],
+                            "imageType": [
+                              3,
+                              0
+                            ],
+                            "skewX": [
+                              3,
+                              null
+                            ],
+                            "skewY": [
+                              3,
+                              null
+                            ]
+                          }
+                        }
+                      ],
+                      "texture": [
+                        10,
+                        "Assets/atlas/ui.bin",
+                        "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                        "shop_item_btn_normal.png"
+                      ],
+                      "frame": [
+                        7,
+                        "shop_item_btn_normal.png"
+                      ],
+                      "imageType": [
+                        3,
+                        0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
+                      ],
+                      "text": null,
+                      "state": [
+                        3,
+                        0
+                      ],
+                      "supportNativeEvent": [
+                        5,
+                        false
+                      ]
+                    },
+                    "__json": {
+                      "60bf8c34-12d2-4d65-8825-0dfabf054e4d": {
+                        "class": "qc.TransitionBehaviour",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "60bf8c34-12d2-4d65-8825-0dfabf054e4d"
+                          ],
+                          "enable": true,
+                          "target": [
+                            18,
+                            "7f659037-664c-453f-95de-8c618e799bda"
+                          ],
+                          "_transition": [
+                            3,
+                            2
+                          ],
+                          "_normalTexture": [
+                            10,
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_normal.png"
+                          ],
+                          "_pressedTexture": [
+                            10,
+                            "Assets/atlas/ui.bin",
+                            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                            "shop_item_btn_active.png"
+                          ],
+                          "_disabledTexture": null,
+                          "_normalColor": [
+                            14,
+                            4294967295
+                          ],
+                          "_pressedColor": [
+                            14,
+                            4291611852
+                          ],
+                          "_disabledColor": [
+                            14,
+                            4291611852
+                          ]
+                        }
+                      },
+                      "411d7cbf-56f1-4762-bcf9-e9310331b6ad": {
+                        "class": "qc.engine.Btn_ShopItem",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "411d7cbf-56f1-4762-bcf9-e9310331b6ad"
+                          ],
+                          "enable": true,
+                          "observer": [
+                            18,
+                            "efcf2948-ea56-4f2c-978a-d35d031af03f"
+                          ],
+                          "shop": [
+                            18,
+                            "46611c3d-c56e-4d03-8497-83aabf8b9743"
+                          ],
+                          "desc": [
+                            18,
+                            "eeeb5793-8a36-4b19-a385-3f2b6ba6fce3"
+                          ],
+                          "tech": [
+                            18,
+                            "9cf072cf-e5c5-47ed-b1a4-788ce62be049"
+                          ],
+                          "ship": [
+                            18,
+                            "95b29b0d-b458-4f5f-b806-8749c4ab36f5"
+                          ],
+                          "score": [
+                            18,
+                            "15250366-ec77-4d71-a8be-c3f4c04336ae"
+                          ]
+                        }
+                      }
+                    }
                   }
                 ],
                 "texture": [
@@ -6940,6 +7731,111 @@
                 "frame": [
                   7,
                   "shop_itm_teleport.png"
+                ],
+                "imageType": [
+                  3,
+                  0
+                ],
+                "skewX": [
+                  3,
+                  null
+                ],
+                "skewY": [
+                  3,
+                  null
+                ]
+              },
+              "__json": {}
+            },
+            {
+              "class": "qc.UIImage",
+              "data": {
+                "uuid": "9edda631-7569-455f-ae9f-920e0dd90162",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "icon_resonator"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  861.0550260407326,
+                  70.29236783830905,
+                  861.0550260407326,
+                  70.29236783830905,
+                  41.58431372551246,
+                  39.06405228759883,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/atlas/ui.bin",
+                  "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                  "shop_itm_resonator.png"
+                ],
+                "frame": [
+                  7,
+                  "shop_itm_resonator.png"
                 ],
                 "imageType": [
                   3,
@@ -7769,6 +8665,10 @@
       "key": "Assets/sounds/teleport.mp3.bin",
       "uuid": "6ffd4222-a423-4557-a3fd-e29f5e5c045b"
     },
+    "b281aa7c-9af0-4268-bb28-342cd5fce548": {
+      "key": "Assets/sounds/sonic_wave.mp3.bin",
+      "uuid": "b281aa7c-9af0-4268-bb28-342cd5fce548"
+    },
     "befdee17-5b83-4956-9e2f-c531905cd396": {
       "key": "Assets/atlas/ship.bin",
       "uuid": "befdee17-5b83-4956-9e2f-c531905cd396"
@@ -7784,6 +8684,14 @@
     "1188d543-6e18-43ed-88c2-5c04b8cd086d": {
       "key": "Assets/textures/fx_teleport.bin",
       "uuid": "1188d543-6e18-43ed-88c2-5c04b8cd086d"
+    },
+    "0dfb9072-8746-419c-a6fb-f21f07355e64": {
+      "key": "Assets/action/airblast.bin",
+      "uuid": "0dfb9072-8746-419c-a6fb-f21f07355e64"
+    },
+    "18ce8622-2ab6-425a-a45b-223bafe730ef": {
+      "key": "Assets/textures/fx_airblast.bin",
+      "uuid": "18ce8622-2ab6-425a-a45b-223bafe730ef"
     },
     "l757d06a-78c4-4729-a4d7-9ffc007dbcdc": {
       "key": "l757d06a-78c4-4729-a4d7-9ffc007dbcdc",

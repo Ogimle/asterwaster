@@ -103,7 +103,26 @@ Btn_ShopBuy.prototype.onUp = function() {
 				
 				self.observer.HUD.addMoney(-skill.cost);
 			}
-		break;		
+		break;
+
+		case 'itm_resonator':
+			skill = skills.resonator;
+			bought = skill.up(self.observer.HUD._money);
+			if (bought)
+			{
+				self.tech.text = qc.lc_format('shop_item_resonator_tech', {
+					level:	skill.level,
+					wavecount:	skill.lget(),
+					nwavecount: skill.nget(),
+					cost:	skill.cost
+				});
+
+				self.observer.HUD.addMoney(-skill.cost);
+				if (skill.level === 1 )
+					self.ship.addScript('qc.engine.Buf_Resonator');
+			}
+		break;
+
 	}
 	
 	if (bought)

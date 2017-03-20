@@ -2,7 +2,7 @@
 var HUD = qc.defineBehaviour('qc.engine.HUD', qc.Behaviour, function() {
     // need this behaviour be scheduled in editor
     //this.runInEditor = true;
-    this._wave = 3;
+    this._wave = 0;
     this._score = 0;
     this._money = 0;
     this._lives = 0;

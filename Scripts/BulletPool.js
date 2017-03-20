@@ -84,8 +84,8 @@ BulletPool.prototype.update = function() {
             
             if (b.opt.targ.indexOf('aster') !== -1)
             {
-                //перебираем активные астероиды
-                for (var a_idx in self.asteroidRoot.children)
+                // iterate asteroids
+                for (var a_idx=0, imax=self.asteroidRoot.children.length; a_idx<imax; ++a_idx)
                 {
                     go = self.asteroidRoot.children[a_idx];
 

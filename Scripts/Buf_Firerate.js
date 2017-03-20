@@ -37,14 +37,14 @@ Buf_Firerate.prototype.advance = function(level)
 	this.counter.text = points + '/' +this.skill.level;
     this.skill.points = points;
     console.log(this.skill.points);
-}
+};
 
 Buf_Firerate.prototype.remove = function()
 {
     this.icon.visible = false;
     this.gameObject.ShipCtr.skills.firerate.reset();
     this.gameObject.removeScript(this);
-}
+};
 
 Buf_Firerate.prototype.update = function()
 {
@@ -54,4 +54,4 @@ Buf_Firerate.prototype.update = function()
         //shake icon
         if (this.skill.timeout<0) this.advance(-1);
     }
-}
+};

@@ -120,6 +120,18 @@ Btn_ShopItem.prototype.onUp = function() {
 				});
 		break;
 
+		case 'itm_resonator':
+			self.desc.text = qc.lc_get('shop_item_resonator_desc');
+
+			skill = skills.resonator;
+			cost = skill.cost;
+			self.tech.text = qc.lc_format('shop_item_resonator_tech', {
+				level:	skill.level,
+				wavecount:	skill.lget(),
+				nwavecount: skill.nget(),
+				cost:	cost
+			});
+			break;
 
 	}
 	

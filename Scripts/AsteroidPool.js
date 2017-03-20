@@ -250,12 +250,12 @@ AsteroidPool.prototype.update = function()
                 go.rotation += go.Asteroid.angleSpeed * deltaMs;
 
                 // check collision with player
-                if (self.ship.visible === true && self.ship._untouchable === false)
+                if (self.ship.visible === true)
                 {
                     var dist = self.game.math.distance(go.x, go.y, self.ship.x, self.ship.y);
                     if (dist < self.ship.ShipCtr.radius+go.Asteroid.radius)
                     {
-                        if (go.Asteroid.type === 'ast')
+                        if (go.Asteroid.type === 'ast' && self.ship._untouchable === false)
                         {
                             self.observer.HUD.addLives(-1);
                             self.addBoom();
