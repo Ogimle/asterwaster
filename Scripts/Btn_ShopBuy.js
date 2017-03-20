@@ -123,6 +123,24 @@ Btn_ShopBuy.prototype.onUp = function() {
 			}
 		break;
 
+		case 'itm_radar':
+			skill = skills.radar;
+			bought = skill.up(self.observer.HUD._money);
+			if (bought)
+			{
+				self.tech.text = qc.lc_format('shop_item_radar_tech', {
+					level:	skill.level,
+					targets:	skill.lget(),
+					ntargets: skill.nget(),
+					cost:	skill.cost
+				});
+
+				self.observer.HUD.addMoney(-skill.cost);
+				if (skill.level === 1 )
+					self.ship.addScript('qc.engine.Buf_Radar');
+			}
+		break;
+
 	}
 	
 	if (bought)

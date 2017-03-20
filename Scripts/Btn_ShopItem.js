@@ -133,6 +133,19 @@ Btn_ShopItem.prototype.onUp = function() {
 			});
 			break;
 
+		case 'itm_radar':
+			self.desc.text = qc.lc_get('shop_item_radar_desc');
+
+			skill = skills.radar;
+			cost = skill.cost;
+			self.tech.text = qc.lc_format('shop_item_radar_tech', {
+				level:	skill.level,
+				targets:	skill.lget(),
+				ntargets: skill.nget(),
+				cost:	cost
+			});
+			break;
+
 	}
 	
 };

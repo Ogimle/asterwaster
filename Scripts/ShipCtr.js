@@ -151,6 +151,36 @@ var ShipCtr = qc.defineBehaviour('qc.demo.ShipCtr', qc.Behaviour, function() {
 				this.value = 0;
 			}
 
+		},
+        radar: {
+			level: 0,
+			max_level: 3,
+			base: 0,
+			value:0,
+			step: 1,
+			cost: 0,
+			up: function(score) {
+				if (this.cost <= score && this.level<this.max_level)
+				{
+					this.level++;
+					this.value += this.step;
+					return true;
+				}
+				return false;
+			},
+			lget: function() {
+				if (this.level===0) return '---';
+				return this.level;
+			},
+			nget: function() {
+				if (this.level+1>this.max_level) return '---';
+				return this.level+1;
+			},
+			reset: function() {
+				this.level = 0;
+				this.value = 0;
+			}
+
 		}
     };
     
@@ -162,7 +192,8 @@ var ShipCtr = qc.defineBehaviour('qc.demo.ShipCtr', qc.Behaviour, function() {
     asters: qc.Serializer.NODE,
     ico_teleport: qc.Serializer.NODE,
     ico_frate: qc.Serializer.NODE,
-    ico_resonator: qc.Serializer.NODE
+    ico_resonator: qc.Serializer.NODE,
+    ico_radar: qc.Serializer.NODE
 });
 
 ShipCtr.prototype.awake = function ()
@@ -450,6 +481,9 @@ ShipCtr.prototype.removeSkills = function()
 
     if (go.Buf_Resonator) go.Buf_Resonator.remove();
     self.ico_resonator.visible = false;
+
+    if (go.Buf_Radar) go.Buf_Radar.remove();
+    self.ico_radar.visible = false;
 
 	self.skills.cloaker.reset();
 };
