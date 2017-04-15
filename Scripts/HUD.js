@@ -92,6 +92,8 @@ HUD.prototype.addLives = function(num)
 
 HUD.prototype.restart = function() {
     var self = this;
+
+    self.isPause = false;
     
     self.dlgGameOver.visible = false;
     self.dlgShop.visible = false;

@@ -36,7 +36,7 @@ Buf_Firerate.prototype.advance = function(level)
 
 	this.counter.text = points + '/' +this.skill.level;
     this.skill.points = points;
-    console.log(this.skill.points);
+    //console.log(this.skill.points);
 };
 
 Buf_Firerate.prototype.remove = function()

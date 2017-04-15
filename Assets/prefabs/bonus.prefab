@@ -1,0 +1,262 @@
+{
+  "class": "qc.UIImage",
+  "data": {
+    "uuid": "8b28d4b3-252c-4197-932f-96156baf3bb1",
+    "_prefab": [
+      7,
+      "7e20710e-e717-4fd8-bc60-f5e2c0f0242e"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "itm"
+    ],
+    "uniqueName": [
+      7,
+      ""
+    ],
+    "ignoreDestroy": [
+      5,
+      false
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      16777215
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [
+      {
+        "clazz": "qc.engine.Asteroid",
+        "data": "ab37847f-a3e6-40b1-8aad-78e3e4468dcd"
+      },
+      {
+        "clazz": "qc.engine.Bonus",
+        "data": "664a8c55-9e3c-451a-a818-e542e1f0c500"
+      }
+    ],
+    "position": [
+      0.5,
+      0.5,
+      0,
+      0,
+      0,
+      0,
+      57,
+      55,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      0.6470683057419622
+    ],
+    "scaleY": [
+      3,
+      0.6288792083485824
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [
+      {
+        "class": "qc.Sprite",
+        "data": {
+          "uuid": "b3dd5bde-542f-4ed2-83c7-982720959dec",
+          "_prefab": [
+            7,
+            ""
+          ],
+          "__lock": [
+            5,
+            null
+          ],
+          "name": [
+            7,
+            "bubble"
+          ],
+          "uniqueName": [
+            7,
+            ""
+          ],
+          "ignoreDestroy": [
+            5,
+            false
+          ],
+          "alpha": [
+            3,
+            1
+          ],
+          "visible": [
+            5,
+            true
+          ],
+          "colorTint": [
+            14,
+            16777215
+          ],
+          "static": [
+            5,
+            false
+          ],
+          "scripts": [],
+          "position": [
+            0.5,
+            0.5,
+            28.9046414986976,
+            23.01665489825338,
+            0.40464149869760035,
+            -4.483345101746622,
+            64,
+            65,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "scaleX": [
+            3,
+            1.545431773489302
+          ],
+          "scaleY": [
+            3,
+            1.5901304566351997
+          ],
+          "rotation": [
+            3,
+            0
+          ],
+          "interactive": [
+            5,
+            false
+          ],
+          "isFiltersThrough": [
+            5,
+            null
+          ],
+          "children": [],
+          "texture": [
+            10,
+            "Assets/atlas/ui.bin",
+            "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+            "bubble.png"
+          ],
+          "frame": [
+            7,
+            "bubble.png"
+          ],
+          "defaultAnimation": [
+            7,
+            null
+          ]
+        }
+      }
+    ],
+    "texture": [
+      10,
+      "Assets/atlas/ui.bin",
+      "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+      "shop_itm_firerate.png"
+    ],
+    "frame": [
+      7,
+      "shop_itm_firerate.png"
+    ],
+    "imageType": [
+      3,
+      0
+    ],
+    "skewX": [
+      3,
+      null
+    ],
+    "skewY": [
+      3,
+      null
+    ]
+  },
+  "__json": {
+    "ab37847f-a3e6-40b1-8aad-78e3e4468dcd": {
+      "class": "qc.engine.Asteroid",
+      "data": {
+        "uuid": [
+          7,
+          "ab37847f-a3e6-40b1-8aad-78e3e4468dcd"
+        ],
+        "enable": true,
+        "type": [
+          7,
+          "bns"
+        ],
+        "score": [
+          3,
+          0
+        ],
+        "maxHP": [
+          3,
+          1
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "moveSpeed": [
+          3,
+          20
+        ],
+        "angleSpeed": [
+          3,
+          0
+        ]
+      }
+    },
+    "664a8c55-9e3c-451a-a818-e542e1f0c500": {
+      "class": "qc.engine.Bonus",
+      "data": {
+        "uuid": [
+          7,
+          "664a8c55-9e3c-451a-a818-e542e1f0c500"
+        ],
+        "enable": true
+      }
+    }
+  },
+  "dependences": {
+    "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d": {
+      "key": "Assets/atlas/ui.bin",
+      "uuid": "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d"
+    }
+  }
+}

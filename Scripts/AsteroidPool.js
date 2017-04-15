@@ -11,6 +11,7 @@ var AsteroidPool = qc.defineBehaviour('qc.engine.AsteroidPool', qc.Behaviour, fu
     asteroid3Prefab: qc.Serializer.PREFAB,
     asteroid4Prefab: qc.Serializer.PREFAB,
     gemsPrefab: qc.Serializer.PREFAB,
+    bonusPrefab: qc.Serializer.PREFAB,
 
     ship: qc.Serializer.NODE,
     observer: qc.Serializer.NODE
@@ -37,7 +38,19 @@ AsteroidPool.prototype.addBoom = function ()
     }
 };
 
-AsteroidPool.prototype.addPick = function () {
+AsteroidPool.prototype.addPick = function (type) {
+    var self = this, idx = 2;
+    if (!self.game.storage.get('mutesound'))
+    {
+        var snd = self.game.add.sound();
+        snd.destroyWhenStop = true;
+        if (type == 'gem') idx = '2';
+        else if (type == 'bonus') idx = '1';
+        snd.audio = self.sounds[idx];
+        snd.loop = false;
+        snd.volume = 1;
+        snd.play();
+    }
 };
 
 AsteroidPool.prototype.addBy = function (obj, size) {
@@ -122,11 +135,11 @@ AsteroidPool.prototype.remove = function (go)
     if (go.Asteroid.type === 'ast')
     {
         self.addBy(go);
-        // считаем шанс выпадения кристала
+        // calc chance gem drop
         if (Math.random() < 0.20)
         {
-            // ищем доступный в пуле
-            // добавляем/отображем в позицию исходного астера
+            // find existed at pool
+            // if exist then get it
             var isAddGem = true;
             for (i in self.gameObject.children) {
                 a = self.gameObject.children[i];
@@ -136,18 +149,59 @@ AsteroidPool.prototype.remove = function (go)
                 }
             }
 
+            // if dont exit then add to pool
             if (isAddGem) a = self.game.add.clone(self.gemsPrefab, self.gameObject);
             var idx = Math.floor(Math.random()*3);
             var frm = ['gem_blue.png', 'gem_red.png', 'gem_green.png'];
             a.frame = frm[idx];
+
+            //add to aster pos
             a.Asteroid.init({x: go.x, y: go.y});
         }
+
+
+        // chance to drom bonus 10%
+        var chance = Math.random(); // bonus avail
+        if (chance < 0.10)
+        {
+            // find existed at pool
+            // if exist then get it
+            var isAddBonus = true;
+            for (i in self.gameObject.children) {
+                a = self.gameObject.children[i];
+                if (a.visible === false && a.type === 'bns') {
+                    isAddBonus = false;
+                    break;
+                }
+            }
+
+            // if dont exit then add to pool
+            if (isAddBonus) a = self.game.add.clone(self.bonusPrefab, self.gameObject);
+            var frm = ['shop_itm_ship.png', 'shop_itm_firerate.png', '1000.png'];
+            var skl = ['qc.engine.Bns_Ship', 'qc.engine.Bns_Firerate', 'qc.engine.Bns_1000'];
+
+            // get all exluded live
+            var idx = 1+Math.floor(Math.random()*2);
+
+            // if chance to get live then get live
+            if (chance <=0.01) idx = 0;
+
+            a.frame = frm[idx];
+
+            //add to aster pos
+            a.Asteroid.init({x: go.x, y: go.y});
+            a.Bonus.init();
+            a.Asteroid.bonus = skl[idx];
+
+        }
     }
+
 };
 
 AsteroidPool.prototype.removeAll = function ()
 {
     var self = this;
+    self._gems = 0;
     
     for (var idx in self.gameObject.children) 
 	{
@@ -157,7 +211,8 @@ AsteroidPool.prototype.removeAll = function ()
 
 AsteroidPool.prototype.nextWave = function () {
     var self = this;
-    
+
+    self._waitForWave = true;
     this.game.timer.add(3000, function() {
         // не знаю как вытащить ширину объекта из префаба
         // в общем 100 это радиус самого большого астероида
@@ -193,7 +248,7 @@ AsteroidPool.prototype.nextWave = function () {
 			self.addBy(pos);
         }
         
-        self._waveReady = true;
+        self._waitForWave = false;
     });    
 };
 
@@ -225,22 +280,21 @@ AsteroidPool.prototype.update = function()
     
     if (self.isAwake !== true || self.observer.HUD.isPause) return;
     
-    if (self._waveReady)
+    //if (self._waveReady || self._gems > 0)
     {
-        var isAllDie = true;
-
         // iterate by asteroids & gems
         // move it if alive
         // run new wave if all die
         self._alive = 0;
+        self._gems = 0;
         for (var idx=0, imax=self.gameObject.children.length; idx<imax; ++idx)
         {
             if (self.gameObject.children[idx].visible === true) 
             {
-				self._alive++;
-                isAllDie = false;
-
                 var go = self.gameObject.children[idx];
+
+                if (go.Asteroid.type === 'ast') self._alive++;
+                else self._gems++;
 
                 // move aster
                 var deltaMs = self.game.time.deltaTime / 1000;
@@ -264,7 +318,13 @@ AsteroidPool.prototype.update = function()
                         {
                             self.observer.HUD.addMoney(go.Asteroid.score);
                             self.remove(go);
-                            self.addPick();
+                            self.addPick('gem');
+                        }
+                        else if (go.Asteroid.type === 'bns')
+                        {
+                            self.ship.addScript(go.Asteroid.bonus);
+                            self.remove(go);
+                            self.addPick('bonus');
                         }
                     }
                 }
@@ -279,9 +339,8 @@ AsteroidPool.prototype.update = function()
             }
         }  
 
-        if (isAllDie)
+        if (self._alive == 0 && !self._waitForWave)
         {
-            self._waveReady = false;
             self._wave++;
             self.observer.HUD.setWave(self._wave);
             self.nextWave();

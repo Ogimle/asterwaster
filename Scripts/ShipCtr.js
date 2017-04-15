@@ -12,6 +12,14 @@ var ShipCtr = qc.defineBehaviour('qc.demo.ShipCtr', qc.Behaviour, function() {
     this._isFly = false;
     
     this.gameObject._untouchable = false;
+
+    // bonuses
+
+    this.bonus = {
+      firerate: 0
+    };
+
+    //skills
     
     this.skills = {
 		life: {
@@ -418,13 +426,13 @@ ShipCtr.prototype.onPointerUp = function(id, x, y)
 
 ShipCtr.prototype.fire = function() 
 {
-    var self = this, frate = self.skills.firerate;
+    var self = this, bonus = self.bonus.firerate, frate = self.skills.firerate;
         
     if (self.game.time.now - self._fireTime < self._fireTimeout) return;
 
     //self._fireTimeout = self._fireTimeoutBase - self._fireTimeoutBase * ((self.skills.firerate.value * self.asters.AsteroidPool._alive)/200);
     if (frate.timeout>0)
-        self._fireTimeout = self._fireTimeoutBase - frate.current();
+        self._fireTimeout = self._fireTimeoutBase - frate.current() - bonus;
     else
         self._fireTimeout = self._fireTimeoutBase;
 

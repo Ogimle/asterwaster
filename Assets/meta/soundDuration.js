@@ -9,5 +9,7 @@ soundDurationMap = {
   "Assets/sounds/teleport.mp3.bin": 0.33519274376417235,
   "Assets/sounds/ship_engine.mp3.bin": 2.5309977324263038,
   "Assets/sounds/sonic_wave.mp3.bin": 1.079546485260771,
-  "Assets/sounds/ping.mp3.bin": 1.5904761904761904
+  "Assets/sounds/ping.mp3.bin": 1.5904761904761904,
+  "Assets/sounds/getbonus.mp3.bin": 0.49848072562358275,
+  "Assets/sounds/getgem.mp3.bin": 0.251156462585034
 };
