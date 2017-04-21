@@ -1,0 +1,107 @@
+{
+  "class": "qc.UIImage",
+  "data": {
+    "uuid": "0cc19f2d-1cb5-4ed5-81a1-9e5e5fcc58f8",
+    "_prefab": [
+      7,
+      "87354af5-38e9-44a0-92d6-7828d9353eca"
+    ],
+    "__lock": [
+      5,
+      null
+    ],
+    "name": [
+      7,
+      "UIImage"
+    ],
+    "uniqueName": [
+      7,
+      ""
+    ],
+    "ignoreDestroy": [
+      5,
+      false
+    ],
+    "alpha": [
+      3,
+      1
+    ],
+    "visible": [
+      5,
+      true
+    ],
+    "colorTint": [
+      14,
+      16777215
+    ],
+    "static": [
+      5,
+      false
+    ],
+    "scripts": [],
+    "position": [
+      0,
+      0,
+      522.4503901895206,
+      258.7157190635451,
+      522.4503901895206,
+      258.7157190635451,
+      32,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scaleX": [
+      3,
+      1
+    ],
+    "scaleY": [
+      3,
+      1
+    ],
+    "rotation": [
+      3,
+      0
+    ],
+    "interactive": [
+      5,
+      false
+    ],
+    "isFiltersThrough": [
+      5,
+      null
+    ],
+    "children": [],
+    "texture": [
+      10,
+      "Assets/textures/flare.bin",
+      "d8ae1308-6fcb-417e-90d3-41a43ac9ef66",
+      0
+    ],
+    "frame": null,
+    "imageType": [
+      3,
+      0
+    ],
+    "skewX": [
+      3,
+      null
+    ],
+    "skewY": [
+      3,
+      null
+    ]
+  },
+  "dependences": {
+    "d8ae1308-6fcb-417e-90d3-41a43ac9ef66": {
+      "key": "Assets/textures/flare.bin",
+      "uuid": "d8ae1308-6fcb-417e-90d3-41a43ac9ef66"
+    }
+  }
+}

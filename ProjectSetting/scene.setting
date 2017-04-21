@@ -1,7 +1,8 @@
 {
   "scene": [
     "Assets/scene/mmenu",
-    "Assets/scene/game"
+    "Assets/scene/game",
+    "Assets/scene/credits"
   ],
   "entryScene": "Assets/scene/mmenu"
 }

@@ -27,6 +27,7 @@
   "Assets/atlas/ufo@atlas/ufo3.bin": "ee650d44-83cd-4c9f-a3c4-651f315bdc14",
   "Assets/atlas/ufo@atlas/ufo4.bin": "6ef61df4-f7b6-4d8f-ba16-bd9be9e9b595",
   "Assets/atlas/ui.bin": "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+  "Assets/atlas/ui@atlas/1000.bin": "dcc8cb73-58f5-433f-8e22-4c4a4d419c4c",
   "Assets/atlas/ui@atlas/btn_2menu.bin": "075dc5a9-2f0d-4ffe-aa9d-34fe12ae9704",
   "Assets/atlas/ui@atlas/btn_tryagain.bin": "726e18e5-5c5f-4f77-b2ab-dfd3f537c741",
   "Assets/atlas/ui@atlas/bubble.bin": "731aab68-7283-4e44-96a9-5d3d9494751e",
@@ -63,6 +64,8 @@
   "Assets/scene/mmenu.bin": "313ac5d6-4e85-4b48-ba3e-4d6d650155d9",
   "Assets/sounds/aster-crash.mp3.bin": "a642e913-95bc-4233-9edf-1fe6175e31d9",
   "Assets/sounds/aster-hit.mp3.bin": "b495ba22-506c-49fb-ab51-17a7a57cb5f6",
+  "Assets/sounds/getbonus.mp3.bin": "26eecfb1-2e0d-4bfa-9e5e-4e23a6466e48",
+  "Assets/sounds/getgem.mp3.bin": "de1f86fd-51aa-474d-9b0d-47520fb5a4f3",
   "Assets/sounds/lazer-beam.mp3.bin": "89bd6c1f-0ebd-4522-9166-c83b07684d28",
   "Assets/sounds/ping.mp3.bin": "9fd58d8c-7205-449b-ac64-243a079efc2e",
   "Assets/sounds/ship-crash.mp3.bin": "db64d8b0-ea58-44f5-87e1-e299af18f740",
@@ -83,7 +86,7 @@
   "Assets/textures/starfield.bin": "b7788167-6272-4712-b3de-a3ce59d8d285",
   "Assets/textures/win_gameover.bin": "f6bc5d1f-eaa4-47e3-ba3e-059cfa615ec0",
   "Temp/scene_editor.bin": "22ff2cc3-4a56-4d4c-ae24-880474acca84",
-  "Assets/atlas/ui@atlas/1000.bin": "dcc8cb73-58f5-433f-8e22-4c4a4d419c4c",
-  "Assets/sounds/getbonus.mp3.bin": "26eecfb1-2e0d-4bfa-9e5e-4e23a6466e48",
-  "Assets/sounds/getgem.mp3.bin": "de1f86fd-51aa-474d-9b0d-47520fb5a4f3"
+  "Assets/scene/credits.bin": "628d9cac-99e4-48eb-aab2-78c4561316fb",
+  "Assets/prefabs/UIImage.bin": "87354af5-38e9-44a0-92d6-7828d9353eca",
+  "Assets/prefabs/star.bin": "87354af5-38e9-44a0-92d6-7828d9353eca"
 }
