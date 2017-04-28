@@ -2,7 +2,8 @@
   "scene": [
     "Assets/scene/mmenu",
     "Assets/scene/game",
-    "Assets/scene/credits"
+    "Assets/scene/credits",
+    "Assets/scene/test"
   ],
   "entryScene": "Assets/scene/mmenu"
 }

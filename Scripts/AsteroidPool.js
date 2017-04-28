@@ -273,6 +273,30 @@ AsteroidPool.prototype.getNear = function (go, size)
     return ast;
 };
 
+
+AsteroidPool.prototype.getNearGem = function (go)
+{
+    var self = this, dist = 999999, tmp, tmp_dist, ast = false;
+
+    for(var idx= 0, imax=self.gameObject.children.length; idx<imax; ++idx)
+    {
+        tmp = self.gameObject.children[idx];
+        if (tmp.visible === true && tmp.Asteroid.type === 'gem')
+        {
+            tmp_dist = self.game.math.distance(go.x, go.y, tmp.x, tmp.y);
+			if (tmp_dist < dist)
+            {
+				dist = tmp_dist;
+                ast = tmp;
+            }
+        }
+    }
+
+    return ast;
+};
+
+
+
 // Called every frame, if the behaviour is enabled.
 AsteroidPool.prototype.update = function() 
 {

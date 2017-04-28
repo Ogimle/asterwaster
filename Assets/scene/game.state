@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      1.8609958506223734,
-      21.265560165975103,
-      1.8609958506223734,
-      21.265560165975103,
+      1.8236514522821494,
+      26.30705394190872,
+      1.8236514522821494,
+      26.30705394190872,
       960,
       540,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.9304979253112033
+      0.9118257261410788
     ],
     "scaleY": [
       3,
-      0.9304979253112033
+      0.9118257261410788
     ],
     "rotation": [
       3,
@@ -1287,6 +1287,127 @@
                     "ico_radar": [
                       18,
                       "27416faf-24a9-424c-8965-5dfb040999ce"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.Sprite",
+              "data": {
+                "uuid": "e0be334e-b586-44a4-81a9-6b4da9b61078",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "gnum"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.Gnum",
+                    "data": "ac10e5b8-1c09-4100-9dfb-90f77748796d"
+                  }
+                ],
+                "position": [
+                  0.5,
+                  0.5,
+                  648.8671963677268,
+                  256.0454029511798,
+                  648.8671963677268,
+                  256.0454029511798,
+                  32,
+                  32,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/atlas/ship.bin",
+                  "befdee17-5b83-4956-9e2f-c531905cd396",
+                  "gnum.png"
+                ],
+                "frame": [
+                  7,
+                  "gnum.png"
+                ],
+                "defaultAnimation": [
+                  7,
+                  null
+                ]
+              },
+              "__json": {
+                "ac10e5b8-1c09-4100-9dfb-90f77748796d": {
+                  "class": "qc.engine.Gnum",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "ac10e5b8-1c09-4100-9dfb-90f77748796d"
+                    ],
+                    "enable": true,
+                    "asters": [
+                      18,
+                      "78fb694c-1e5e-4b8b-a7cb-f3261af4127a"
+                    ],
+                    "gemsPrefab": [
+                      16,
+                      "3e8c0f18-d50f-4e83-a22d-e305098bcc54"
                     ]
                   }
                 }
