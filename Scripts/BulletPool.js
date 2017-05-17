@@ -12,6 +12,7 @@ var BulletPool = qc.defineBehaviour('qc.engine.BulletPool', qc.Behaviour, functi
     sounds: qc.Serializer.AUDIOS,
     observer: qc.Serializer.NODE,
     ship: qc.Serializer.NODE,
+    gnum: qc.Serializer.NODE,
     asteroidRoot: qc.Serializer.NODE,
     ufoRoot: qc.Serializer.NODE,
     bulletPrefab: qc.Serializer.PREFAB,
@@ -151,6 +152,16 @@ BulletPool.prototype.update = function() {
                             return;
                         }
                     }
+                }
+            }
+
+            if (b.opt.targ.indexOf('gnum') !== -1 && self.gnum.Gnum.isActive)
+            {
+                dist = self.game.math.distance(self.gnum.x, self.gnum.y, b.x, b.y);
+                if (dist < self.gnum.width/2)
+                {
+                    self.gnum.Gnum.isActive = false;
+                    self.gnum.Gnum.teleport();
                 }
             }
                        

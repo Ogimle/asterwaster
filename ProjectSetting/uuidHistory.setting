@@ -65,6 +65,7 @@
   "Assets/scene/credits.bin": "628d9cac-99e4-48eb-aab2-78c4561316fb",
   "Assets/scene/game.bin": "693da339-19e5-464f-8dba-183439cb567b",
   "Assets/scene/mmenu.bin": "313ac5d6-4e85-4b48-ba3e-4d6d650155d9",
+  "Assets/scene/test.bin": "76d16e54-6347-4e89-acfe-084ab9b84c6b",
   "Assets/sounds/aster-crash.mp3.bin": "a642e913-95bc-4233-9edf-1fe6175e31d9",
   "Assets/sounds/aster-hit.mp3.bin": "b495ba22-506c-49fb-ab51-17a7a57cb5f6",
   "Assets/sounds/getbonus.mp3.bin": "26eecfb1-2e0d-4bfa-9e5e-4e23a6466e48",
@@ -88,6 +89,5 @@
   "Assets/textures/opt_wasd.bin": "f079f8cf-60ef-4ca6-9103-189fea1d8c1e",
   "Assets/textures/starfield.bin": "b7788167-6272-4712-b3de-a3ce59d8d285",
   "Assets/textures/win_gameover.bin": "f6bc5d1f-eaa4-47e3-ba3e-059cfa615ec0",
-  "Temp/scene_editor.bin": "22ff2cc3-4a56-4d4c-ae24-880474acca84",
-  "Assets/scene/test.bin": "76d16e54-6347-4e89-acfe-084ab9b84c6b"
+  "Temp/scene_editor.bin": "22ff2cc3-4a56-4d4c-ae24-880474acca84"
 }

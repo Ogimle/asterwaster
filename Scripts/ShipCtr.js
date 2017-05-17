@@ -442,7 +442,7 @@ ShipCtr.prototype.fire = function()
         isPlayer: true,
         from: self.gameObject,
         snd: self._sndShoot,
-        targ: ['aster', 'ufo'],
+        targ: ['aster', 'ufo', 'gnum'],
         dmg: self._bulletDamage,
         rot: self.gameObject.rotation,
         dir: {
