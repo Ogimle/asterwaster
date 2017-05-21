@@ -150,7 +150,7 @@ HUD.prototype.update = function() {
         }, 500);
     }
     
-    if (self._lives > -1 && !self.isKeyShop && self.game.input.isKeyDown(qc.Keyboard.ESC)) {
+    if (self._lives > -1 && !self.isKeyShop && self.game.input.isKeyDown(qc.Keyboard.CONTROL)) {
         isShop = !self.dlgShop.visible;
         self.isPause = isShop;
         self.dlgShop.visible = isShop;
