@@ -14,6 +14,7 @@ var AsteroidPool = qc.defineBehaviour('qc.engine.AsteroidPool', qc.Behaviour, fu
     bonusPrefab: qc.Serializer.PREFAB,
 
     ship: qc.Serializer.NODE,
+    gnum: qc.Serializer.NODE,
     observer: qc.Serializer.NODE
 });
 
@@ -350,6 +351,17 @@ AsteroidPool.prototype.update = function()
                             self.remove(go);
                             self.addPick('bonus');
                         }
+                    }
+                }
+
+                // check collision with gnum
+                if (self.gnum.Gnum.isActive === true && go.Asteroid.type === 'gem')
+                {
+                    var dist = self.game.math.distance(go.x, go.y, self.gnum.x, self.gnum.y);
+                    if (dist < self.gnum.Gnum.radius+go.Asteroid.radius)
+                    {
+                        self.remove(go);
+                        self.addPick('gem');
                     }
                 }
 

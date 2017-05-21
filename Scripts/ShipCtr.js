@@ -378,7 +378,11 @@ ShipCtr.prototype.update = function()
 		if (go.Buf_Teleport.apply(self.bg))
         {
             self._sndTeleport.play();
-            if (self.skills.resonator.level > 0) go.Buf_Resonator.activate();
+            if (self.skills.resonator.level > 0)
+            {
+                go.Buf_Resonator.activate();
+                go.Buf_Resonator.apply();
+            }
         }
         else if (self.skills.resonator.level > 0)
         {

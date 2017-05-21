@@ -72,16 +72,17 @@ BulletPool.prototype.add = function (opt) {
 
 // Called every frame, if the behaviour is enabled.
 BulletPool.prototype.update = function() {
-    var self = this, go, dist, boom;
+    var self = this, go, dist, boom, r;
     
     if (self.observer.HUD.isPause) return;
     
-    //перебираем активные снаряды
+    // iterate bullets
     for (var idx in self.gameObject.children)
     {
         var b = self.gameObject.children[idx];
         if (b.visible === true)
         {
+            r = b.width / 2; //bullet radius
             
             if (b.opt.targ.indexOf('aster') !== -1)
             {
@@ -93,17 +94,17 @@ BulletPool.prototype.update = function() {
                     if ( go.Asteroid.type === 'ast' && go.visible )
                     {
                         dist = self.game.math.distance(go.x, go.y, b.x, b.y);
-                        //столкновение снаряда с астером произошло
-                        if (dist < go.Asteroid.radius) {
+                        // bullet collided with aster
+                        if (dist < go.Asteroid.radius + r) {
                             b.visible = false;//убираем снаряд
 
-                            //добавляем взрыв
+                            // add explode gfx
                             self.addHit(go.Asteroid.size);
                             boom = self.game.add.clone(self.boomPrefab);
                             boom.x = b.x;
                             boom.y = b.y;
 
-                            // ударяем астер
+                            // remove aster if lost all hp
                             go.Asteroid.hp -= b.opt.dmg;
                             if (go.Asteroid.hp < 1) //убираем астер
                             {
@@ -160,7 +161,6 @@ BulletPool.prototype.update = function() {
                 dist = self.game.math.distance(self.gnum.x, self.gnum.y, b.x, b.y);
                 if (dist < self.gnum.width/2)
                 {
-                    self.gnum.Gnum.isActive = false;
                     self.gnum.Gnum.teleport();
                 }
             }

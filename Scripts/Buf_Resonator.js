@@ -8,7 +8,9 @@ var But_Resonator = qc.defineBehaviour('qc.engine.Buf_Resonator', qc.Behaviour, 
     this.activated = false;
     this.skill = this.gameObject.ShipCtr.skills.resonator;
 
+    this.gnum = this.game.world._findByName('root')._findByName('gnum');
     this.asters = this.game.world._findByName('root')._findByName('asteroidRoot');
+    this.ufos = this.game.world._findByName('root')._findByName('ufoRoot');
     this.bullets = this.game.world._findByName('root')._findByName('bulletRoot');
 
     this.icon = this.game.world._findByName('root')._findByName('icon_resonator');
@@ -106,45 +108,74 @@ But_Resonator.prototype.update = function()
     {
         wave = self['fx_'+w_idx];
 
-        //iterate asters
         if (wave.visible)
-        for (var a_idx = 0, imax = self.asters.children.length; a_idx < imax; ++a_idx)
         {
-            go = self.asters.children[a_idx];
-
-            isHitted = false;
-            for(var h_idx = 0, hmax=wave.hitted.length; h_idx<hmax; ++h_idx)
+            //kill gnum
+            if (self.gnum.Gnum.isActive)
             {
-                if (go == wave.hitted[h_idx]) {isHitted=true; break;}
+                dist = self.game.math.distance(self.gnum.x, self.gnum.y, wave.x, wave.y);
+                if (dist < self.gnum.width/2 + wave.width/2)
+                {
+                    self.gnum.Gnum.teleport();
+                }
             }
 
-            if (!isHitted && go.Asteroid.type === 'ast' && go.visible)
+            //iterate ufos
+            for (var a_idx = 0, imax = self.ufos.children.length; a_idx < imax; ++a_idx)
             {
-                dist = self.game.math.distance(go.x, go.y, wave.x, wave.y);
-
-                // wave is collide with aster
-                if (dist < wave.width/2 + go.Asteroid.radius)
+                go = self.ufos.children[a_idx];
+                if (go.visible)
                 {
-                    var
-                        L = wave.width / 2 / go.Asteroid.radius,
-                        cx = (wave.x + L * go.x) / (1 + L),
-                        cy = (wave.y + L * go.y) / (1 + L);
-
-                    //add explode
-                    self.bullets.BulletPool.addHit(go.Asteroid.size);
-                    var boom = self.game.add.clone(self.bullets.BulletPool.boomPrefab);
-                    boom.x = cx;
-                    boom.y = cy;
-
-                    // if hp of aster is out then remove it
-                    go.Asteroid.hp -= 1;
-                    if (go.Asteroid.hp < 1)
+                    dist = self.game.math.distance(go.x, go.y, wave.x, wave.y);
+                    if (dist < go.width/2 + wave.width/2)
                     {
-                        self.asters.AsteroidPool.remove(go);
-                        self.bullets.BulletPool.addBoom(go.Asteroid.size);
+                        self.ufos.UfoPool.remove(go);
+                        self.bullets.BulletPool.addHit(3);
+                        var boom = self.game.add.clone(self.bullets.BulletPool.boomPrefab);
+                        boom.x = go.x;
+                        boom.y = go.y;
                     }
+                }
+            }
 
-                    if (go.Asteroid.size > 1) wave.hitted.push(go);
+            //iterate asters
+            for (var a_idx = 0, imax = self.asters.children.length; a_idx < imax; ++a_idx)
+            {
+                go = self.asters.children[a_idx];
+
+                isHitted = false;
+                for (var h_idx = 0, hmax = wave.hitted.length; h_idx < hmax; ++h_idx) {
+                    if (go == wave.hitted[h_idx]) {
+                        isHitted = true;
+                        break;
+                    }
+                }
+
+                if (!isHitted && go.Asteroid.type === 'ast' && go.visible) {
+                    dist = self.game.math.distance(go.x, go.y, wave.x, wave.y);
+
+                    // wave is collide with aster
+                    if (dist < wave.width / 2 + go.Asteroid.radius) {
+                        var
+                            L = wave.width / 2 / go.Asteroid.radius,
+                            cx = (wave.x + L * go.x) / (1 + L),
+                            cy = (wave.y + L * go.y) / (1 + L);
+
+                        //add explode
+                        self.bullets.BulletPool.addHit(go.Asteroid.size);
+                        var boom = self.game.add.clone(self.bullets.BulletPool.boomPrefab);
+                        boom.x = cx;
+                        boom.y = cy;
+
+                        // if hp of aster is out then remove it
+                        go.Asteroid.hp -= 1;
+                        if (go.Asteroid.hp < 1) {
+                            self.asters.AsteroidPool.remove(go);
+                            self.bullets.BulletPool.addBoom(go.Asteroid.size);
+                        }
+
+                        if (go.Asteroid.size > 1) wave.hitted.push(go);
+                    }
                 }
             }
         }

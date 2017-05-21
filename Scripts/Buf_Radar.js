@@ -4,10 +4,12 @@ var Buf_Radar = qc.defineBehaviour('qc.engine.Buf_Radar', qc.Behaviour, function
 
     this.ufos = this.game.world._findByName('root')._findByName('ufoRoot');
     this.ship = this.game.world._findByName('root')._findByName('ship');
+    this.gnum = this.game.world._findByName('root')._findByName('gnum');
 
     this.icon = this.game.world._findByName('root')._findByName('radar');
     this.scan = this.icon._findByName('scan');
     this.r_ship = this.icon._findByName('ship');
+    this.r_gnum = this.icon._findByName('gnum');
     this.r_ufos = [
         this.icon._findByName('ufo1'),
         this.icon._findByName('ufo2'),
@@ -49,6 +51,18 @@ Buf_Radar.prototype.update = function()
     this.r_ship.y = this.ship.y/13.5;
 
     cnt = 0;
+
+    if (this.gnum.Gnum.isActive) {
+        this.r_gnum.visible = true;
+        this.r_gnum.x = this.gnum.x / 8.9;
+        this.r_gnum.y = this.gnum.y / 13.5;
+        cnt++;
+    }
+    else
+    {
+        this.r_gnum.visible = false;
+    }
+
     for (var u_idx=0, umax=this.ufos.children.length; u_idx<umax; ++u_idx)
     {
         go = this.ufos.children[u_idx];

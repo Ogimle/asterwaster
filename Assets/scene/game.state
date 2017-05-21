@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      53.57117572269868,
-      90.17709455921644,
-      53.57117572269868,
-      90.17709455921644,
+      1.7572614107883737,
+      36.76970954356847,
+      1.7572614107883737,
+      36.76970954356847,
       960,
       540,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.7228516557559376
+      0.8786307053941909
     ],
     "scaleY": [
       3,
-      0.7228516557559376
+      0.8786307053941909
     ],
     "rotation": [
       3,
@@ -806,6 +806,10 @@
                     "bonusPrefab": [
                       16,
                       "7e20710e-e717-4fd8-bc60-f5e2c0f0242e"
+                    ],
+                    "gnum": [
+                      18,
+                      "e0be334e-b586-44a4-81a9-6b4da9b61078"
                     ]
                   }
                 }
@@ -1424,6 +1428,21 @@
                     "observer": [
                       18,
                       "efcf2948-ea56-4f2c-978a-d35d031af03f"
+                    ],
+                    "sounds": [
+                      13,
+                      [
+                        [
+                          12,
+                          "Assets/sounds/gnum-engine.mp3.bin",
+                          "da88bd0a-9b76-41bc-aeb3-2f852e3174b4"
+                        ],
+                        [
+                          12,
+                          "Assets/sounds/teleport.mp3.bin",
+                          "6ffd4222-a423-4557-a3fd-e29f5e5c045b"
+                        ]
+                      ]
                     ]
                   }
                 }
@@ -2943,6 +2962,102 @@
                       "frame": [
                         7,
                         "red_cross.png"
+                      ],
+                      "defaultAnimation": [
+                        7,
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "class": "qc.Sprite",
+                    "data": {
+                      "uuid": "9044c652-ae28-416c-9492-1a0fb73997b6",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "gnum"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        86.96149614961567,
+                        42.420242024203624,
+                        86.96149614961567,
+                        42.420242024203624,
+                        3,
+                        3,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/atlas/ui.bin",
+                        "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                        "pink_cross.png"
+                      ],
+                      "frame": [
+                        7,
+                        "pink_cross.png"
                       ],
                       "defaultAnimation": [
                         7,
@@ -10748,6 +10863,10 @@
     "befdee17-5b83-4956-9e2f-c531905cd396": {
       "key": "Assets/atlas/ship.bin",
       "uuid": "befdee17-5b83-4956-9e2f-c531905cd396"
+    },
+    "da88bd0a-9b76-41bc-aeb3-2f852e3174b4": {
+      "key": "Assets/sounds/gnum-engine.mp3.bin",
+      "uuid": "da88bd0a-9b76-41bc-aeb3-2f852e3174b4"
     },
     "d8ae1308-6fcb-417e-90d3-41a43ac9ef66": {
       "key": "Assets/textures/flare.bin",

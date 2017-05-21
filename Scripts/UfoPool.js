@@ -46,13 +46,11 @@ UfoPool.prototype.recalcTimeout = function(wave)
 UfoPool.prototype.spawn = function() 
 {
     var self = this;
-    var i,ufo, sign_x,sign_y, coord, cntmax=1, cnt=0, data=[];
+    var i,ufo, sign_x,sign_y, coord = {}, cntmax=1, cnt=0, data=[];
 
     // рассчитываем позиции для нло
     for (i=0; i<cntmax; i++)
     {
-        coord = {};
-        
         // куда летим, слева направо, сверху вних etc..
         sign_x = Math.random() < 0.5 ? -1 : 1;
         sign_y = Math.random() < 0.5 ? -1 : 1;
