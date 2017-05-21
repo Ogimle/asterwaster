@@ -453,10 +453,10 @@
                 "position": [
                   0,
                   0,
-                  -100.00000201214812,
-                  -100,
-                  -100.00000201214812,
-                  -100,
+                  -103.41440579018823,
+                  -99.99999999999999,
+                  -103.41440579018823,
+                  -99.99999999999999,
                   1160,
                   740,
                   0,
@@ -3053,11 +3053,11 @@
                         10,
                         "Assets/atlas/ui.bin",
                         "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
-                        "pink_cross.png"
+                        "yellow_cross.png"
                       ],
                       "frame": [
                         7,
-                        "pink_cross.png"
+                        "yellow_cross.png"
                       ],
                       "defaultAnimation": [
                         7,

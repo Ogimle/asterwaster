@@ -91,5 +91,6 @@
   "Assets/textures/opt_wasd.bin": "f079f8cf-60ef-4ca6-9103-189fea1d8c1e",
   "Assets/textures/starfield.bin": "b7788167-6272-4712-b3de-a3ce59d8d285",
   "Assets/textures/win_gameover.bin": "f6bc5d1f-eaa4-47e3-ba3e-059cfa615ec0",
-  "Temp/scene_editor.bin": "22ff2cc3-4a56-4d4c-ae24-880474acca84"
+  "Temp/scene_editor.bin": "22ff2cc3-4a56-4d4c-ae24-880474acca84",
+  "Assets/atlas/ui@atlas/yellow_cross.bin": "98666916-0376-47bc-83e1-a6beb501887b"
 }

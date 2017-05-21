@@ -4,6 +4,7 @@ var Observer_menu = qc.defineBehaviour('qc.engine.Observer_menu', qc.Behaviour, 
 }, {
     wopt: qc.Serializer.NODE,
     ufos: qc.Serializer.NODE,
+    gnum: qc.Serializer.NODE,
     asters: qc.Serializer.NODE
 });
 
@@ -14,6 +15,8 @@ Observer_menu.prototype.awake = function() {
 
 Observer_menu.prototype.restart = function() {
     var self = this;
+
+    self.gnum.Gnum._seekTimeout = 10000;
 
     self.ufos.UfoPool._ufoTimeout = 25000;
     self.ufos.UfoPool._ufoTime = 0;

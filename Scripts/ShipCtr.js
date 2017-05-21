@@ -244,9 +244,12 @@ ShipCtr.prototype.awake = function ()
     self._sndTeleport.false = true;
     self._sndTeleport.volume = 0.3;
 
-    if (self.game.storage.get('disabledrag'))
+    self._drag = self.game.storage.get('drag') || 0;
+    switch (self._drag)
     {
-        this.getScript('qc.arcade.RigidBody').drag.set(0, 0);
+        case 1: this.getScript('qc.arcade.RigidBody').drag.set(150, 150); break;
+        case 2: this.getScript('qc.arcade.RigidBody').drag.set(0, 0); break;
+        default: this.getScript('qc.arcade.RigidBody').drag.set(600, 600); break;
     }
 
     if (self.game.storage.get('seamless'))
@@ -333,6 +336,11 @@ ShipCtr.prototype.update = function()
             self._sndEngine.stop();
             go.stop();
             go.frame = 'ship.png';
+            /*if (self._drag==0)
+            {
+                self.rbody.velocity.set(0, 0);
+                self.rbody.acceleration.set(0, 0);
+            }*/
         }
         self.rbody.acceleration.set(0, 0);
     }

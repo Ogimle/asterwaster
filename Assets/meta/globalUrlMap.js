@@ -49,6 +49,7 @@ urlMapConfig = {
   "8331160b-30eb-4d7d-8623-d4fe8ad26b7d": "Assets/atlas/ui@atlas/shop_itm_ship.bin",
   "c49e9879-9065-405d-8892-7785fb2e2dad": "Assets/atlas/ui@atlas/shop_itm_teleport.bin",
   "bc57433e-0567-4c5c-b3d2-88e230005ea7": "Assets/atlas/ui@atlas/uk.bin",
+  "98666916-0376-47bc-83e1-a6beb501887b": "Assets/atlas/ui@atlas/yellow_cross.bin",
   "f6ced1f5-8f30-4c61-8f5f-0649b4679870": "Assets/excel/config.bin",
   "l757d06a-78c4-4729-a4d7-9ffc007dbcdc": "Assets/font/Play-Regular.bin",
   "l2dd2c14-50d4-4bfe-8722-daca4c077399": "Assets/font/kslab.bin",
