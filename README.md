@@ -12,7 +12,7 @@
 
 **Engine**: [QICIEngine](http://qiciengine.com/) (phaser wrapper, great engine)
 
-**Demo**: [play](http://elmigo.ru/aster)
+**Demo**: [play](https://ogimle.github.io/asterwaster/)
 
 ## To use sources:
 
