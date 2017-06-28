@@ -41,10 +41,10 @@
     "position": [
       0,
       0,
-      1.8609958506223734,
-      6.265560165975103,
-      1.8609958506223734,
-      6.265560165975103,
+      1.9668049792531406,
+      41.98132780082989,
+      1.9668049792531406,
+      41.98132780082989,
       960,
       540,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.9304979253112033
+      0.983402489626556
     ],
     "scaleY": [
       3,
-      0.9304979253112033
+      0.983402489626556
     ],
     "rotation": [
       3,
@@ -1106,6 +1106,119 @@
                   }
                 }
               }
+            },
+            {
+              "class": "qc.Sprite",
+              "data": {
+                "uuid": "ff0f1d52-6d39-4e61-92b0-d59f7d090b9f",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "cursor"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.Cursor",
+                    "data": "355fc731-ff6a-45ba-94ed-62a8b912f3c3"
+                  }
+                ],
+                "position": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  28,
+                  27,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [],
+                "texture": [
+                  10,
+                  "Assets/atlas/ui.bin",
+                  "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d",
+                  "cur_arrow.png"
+                ],
+                "frame": [
+                  7,
+                  "cur_arrow.png"
+                ],
+                "defaultAnimation": [
+                  7,
+                  null
+                ]
+              },
+              "__json": {
+                "355fc731-ff6a-45ba-94ed-62a8b912f3c3": {
+                  "class": "qc.engine.Cursor",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "355fc731-ff6a-45ba-94ed-62a8b912f3c3"
+                    ],
+                    "enable": true
+                  }
+                }
+              }
             }
           ]
         },
@@ -1166,6 +1279,10 @@
     "__builtin_resource__": {
       "key": "__builtin_resource__",
       "uuid": "__builtin_resource__"
+    },
+    "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d": {
+      "key": "Assets/atlas/ui.bin",
+      "uuid": "181bc7bb-5c2d-4186-adfa-ccb7b3b0ad5d"
     }
   }
 }
